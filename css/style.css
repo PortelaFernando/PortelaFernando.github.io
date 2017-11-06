@@ -180,15 +180,23 @@ label[for*='1']:before {
 }
 
 label[for*='2']:before {
-  content: '\f17d';
+  content: '\f270';
 }
 
 label[for*='3']:before {
-  content: '\f16b';
+  content: '\f23a';
 }
 
 label[for*='4']:before {
-  content: '\f1a9';
+  content: '\f11c';
+}
+
+label[for*='5']:before {
+  content: '\f11c';
+}
+
+label[for*='6']:before {
+  content: '\f135';
 }
 
 label:hover {

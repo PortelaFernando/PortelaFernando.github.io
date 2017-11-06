@@ -19,9 +19,15 @@ body {
 }
 
 h1 {
-  padding: 50px 0;
+  padding: 16px 0;
   font-weight: 400;
   text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 16px;
 }
 
 .fluidMedia {
@@ -39,8 +45,99 @@ h1 {
   top: -85px; 
   left: 0;
   width: 100%;
+  height: 92%;
+}
+
+.fluidMedia2 {
+  position: absolute;
+  padding-bottom: 56.25%;
+  padding-top: 2px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.fluidMedia2 iframe {
+  position: absolute;
+  top: -55px; 
+  left: 0;
+  width: 100%;
   height: 100%;
 }
+
+.fluidMedia6 {
+  position: absolute;
+  padding-bottom: 56.25%;
+  padding-top: 2px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.fluidMedia6 iframe {
+  position: absolute;
+  top: -55px; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fluidMedia3 {
+  position: absolute;
+  padding-bottom: 56.25%;
+  padding-top: 2px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.fluidMedia3 iframe {
+  position: absolute;
+  top: -87px; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 800px;
+}
+
+.fluidMedia4 {
+  position: absolute;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.fluidMedia4 iframe {
+  position: absolute;
+  top: -88px; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fluidMedia5 {
+  position: absolute;
+  padding-bottom: 56.25%;
+  padding-top: 2px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.fluidMedia5 iframe {
+  position: absolute;
+  top: -54px; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 p {
   margin: 0 0 20px;
@@ -65,8 +162,7 @@ input {
 
 label {
   display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
+     padding: 14px 18px;
   font-weight: 600;
   text-align: center;
   color: #bbb;
@@ -110,7 +206,9 @@ input:checked + label {
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6 {
   display: block;
 }
 

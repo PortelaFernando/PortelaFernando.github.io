@@ -18,6 +18,8 @@ body {
   overflow: hidden;
 }
 
+.pluginblock{width:428px;position:absolute;height:auto;text-align:left;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row;flex-flow:row;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
+
 h1 {
   padding: 16px 0;
   font-weight: 400;

@@ -45,7 +45,7 @@ h3 {
   top: -85px; 
   left: 0;
   width: 100%;
-  height: 92%;
+  height: 100%;
 }
 
 .fluidMedia2 {
@@ -84,6 +84,24 @@ h3 {
   height: 100%;
 }
 
+.fluidMedia8 {
+  position: absolute;
+  padding-bottom: 56.25%;
+  padding-top: 2px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.fluidMedia8 iframe {
+  position: absolute;
+  top: 0px; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .fluidMedia6 {
   position: absolute;
   padding-bottom: 56.25%;
@@ -96,7 +114,7 @@ h3 {
 
 .fluidMedia6 iframe {
   position: absolute;
-  top: -55px; 
+  top: 0; 
   left: 0;
   width: 100%;
   height: 100%;
@@ -151,6 +169,24 @@ h3 {
 .fluidMedia5 iframe {
   position: absolute;
   top: -54px; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fluidMedia9 {
+  position: absolute;
+  padding-bottom: 56.25%;
+  padding-top: 2px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.fluidMedia9 iframe {
+  position: absolute;
+  top: 0; 
   left: 0;
   width: 100%;
   height: 100%;
@@ -221,6 +257,14 @@ label[for*='7']:before {
   content: '\f038';
 }
 
+label[for*='8']:before {
+  content: '\f167';
+}
+
+label[for*='9']:before {
+  content: '\f1c3';
+}
+
 label:hover {
   color: #888;
   cursor: pointer;
@@ -239,7 +283,9 @@ input:checked + label {
 #tab4:checked ~ #content4,
 #tab5:checked ~ #content5,
 #tab6:checked ~ #content6,
-#tab7:checked ~ #content7 {
+#tab7:checked ~ #content7,
+#tab8:checked ~ #content8,
+#tab9:checked ~ #content9 {
   display: block;
 }
 

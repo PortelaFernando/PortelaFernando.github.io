@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from teachable.com/enterprise by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2017 21:15:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"438e27ebc2","applicationID":"68773785","transactionName":"IVlZFhNYCVQDRx5DAAVTRE0SXwpP","queueTime":5,"applicationTime":9,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <title>The World’s Most Simple and Powerful eLearning Platform | Teachable</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-92347034e89ac47d292a0f372ef5d1542ab9ab80b0ea5b0f822120eb0c7f1dbd.ico" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" media="all" href="assets/application-5746b84050e5ad44e27326916a08d5af06b8b8024af04edc458f540b9e7aa887.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="70X1uFvUkrYYspVa/xQcbaLRhksnFVZMccqNK5Nv1maZZCCbqYRtn4oZcpywmKuJTK44olslWAgK7oobO+PaHg==" />
+      
+      <meta name="description" content="Use Teachable's simple and reliable eLearning platform to train your employees, educate your community, or sell online courses." />
+    <link rel="canonical" href="enterprise.html" />
+      <meta name="og:description" content="Use Teachable's simple and reliable eLearning platform to train your employees, educate your community, or sell online courses." />
+      <meta property="og:title" content="The World’s Most Simple and Powerful eLearning Platform | Teachable" />
+    <meta name="og:image" content="https://cdn.filepicker.io/api/file/co7IBH9uRA6M3UPnx5nO" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:description" content="Use Teachable's simple and reliable eLearning platform to train your employees, educate your community, or sell online courses." />
+      <meta property="twitter:title" content="The World’s Most Simple and Powerful eLearning Platform | Teachable" />
+    <meta name="twitter:image" content="https://cdn.filepicker.io/api/file/co7IBH9uRA6M3UPnx5nO" />
+    <script src="assets/application-f386174a3d2263d9eea7f61a48a0fbeb56c15c7509345301c4892990e1b85da0.js"></script>
+    
+      <!-- LINKEDIN (for ads) -->
+      <script type="text/javascript">
+        _linkedin_data_partner_id = "30017";
+      </script>
+      <script type="text/javascript">
+        (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "../snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+      </script>
+      <!-- OPTIMIZELY (for A/B testing) -->
+      <script src="../cdn.optimizely.com/js/2602691345.js"></script>
+      <!-- RETENTION by PROFITWELL (for dunning) -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['ProfitWellObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+        })(window,document,'script','../dna8twue3dlxq.cloudfront.net/js/profitwell.js','profitwell');
+        profitwell('auth_token', 'c73a37dec4e02a585a09bd1997ebfa57');
+      </script>
+      <!-- PINTEREST (for ads) -->
+      <script type="text/javascript">
+        !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("../s.pinimg.com/ct/core.js");
+        pintrk('load','2615747628605');
+      </script>
+      <noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2615747628605&amp;noscript=1" />
+      </noscript>
+      <!-- RIGHTMESSAGE (for personalization) -->
+      <script type="text/javascript">
+        (function(p, a, n, d, o) {
+            a = document.createElement('script');
+            a.type = 'text/javascript'; a.async = true; a.src = p;
+            n = document.getElementsByTagName('script')[0]; n.parentNode.insertBefore(a, n);
+        })('../tag.rightmessage.io/1023339.html');
+      </script>
+      <!-- SEGMENT -->
+      <script>
+        window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+        window.analytics.load("tnh8fhmjpo");
+        analytics.ready(function() {
+          ga('create', 'UA-47288176-1', 'auto', {'name': 'secondTracker'});
+          ga('secondTracker.send', 'pageview');
+        });
+      </script>
+      <!-- PEBBLE POST -->
+      <script type="text/javascript">
+        window._pp = window._pp || {};
+        _pp.siteId = 1468;
+        (function() {
+          var ppjs = document.createElement('script');
+          ppjs.type = 'text/javascript';
+          ppjs.async = true;
+          ppjs.src = ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            '//cdn.pbbl.co/r/' + _pp.siteId + '.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ppjs, s);
+        })();
+      </script>
+  </head>
+    <body class="body-public ">
+      <div class="modal-background"></div>
+
+      <div class="webinar-modal-container modal-container vertically-align-contents">
+  <div class="webinar-modal">
+    <img class="close-modal-button x-button" src="assets/modals/modal-close-3e859097c030cd06db8a3856942e423ece061131abd9917d5cc825326c651c81.png" />
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-4">
+        <img src="assets/modals/cam-and-jess-375b2bfa7b9ab61413a25003a1c09862d1702874bc17a01f9f35edd8e4283397.png" />
+      </div>
+      <div class="col-xs-12 col-md-7 col-md-offset-1 vertically-align-contents">
+        <div class="inner-text">
+          <div class="small-uppercase-text"></div>
+          <div class="text-container">
+            <div class="default-modal-header">
+              Learn how to easily create your Teachable school in our live workshop
+            </div>
+            <p class="default-paragraph">In this free live workshop, learn how to setup your first course on Teachable and start teaching this week</p>
+          </div>
+          <div class="input-container">
+            <div class="spinner"></div>
+            <input type="text" placeholder="Email address" />
+            <a class="orange-button register-button">Register</a>
+            <div class="thank-you">
+              <div class="default-modal-header">
+                Thank you!
+              </div>
+              <p class="default-paragraph">You have registered for the webinar.</p>
+              <a class="orange-button close-modal-button">OK</a>
+            </div>
+            <div class="duplicate">
+              You have already registered for this webinar.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="exit-intent-modal-container modal-container vertically-align-contents">
+  <div class="exit-intent-modal">
+    <button type="button" class="close close-modal-button">
+      &times;
+    </button>
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-4">
+        <img src="assets/modals/ebook-cover-mockup-894ef52e921f90e1357f4acef975a1f7e472dd9750295803df50dbc2e8654a46.png" />
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <h1>Get Our Course Creation Book</h1>
+        <p>Learn how to create content for videos, slides, interviews & more to build your own online course!</p>
+        <input type="text" placeholder="Email Address" />
+        <button class="download-button" type="button" name="button">Download now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <section class="_92 clearfix transparent nav-menu">
+  <style>
+    
+    ._92 {
+      margin-bottom: 0px; 
+    }
+  @media (max-width: 991px) {
+    ._92 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._92 {
+      margin-bottom: 0px; 
+    }
+  }
+  </style>
+  <div class="container">
+    <div class="row">
+      <a class="create-course" href="create-account.html">Create a course</a>
+      <a class="teachable-logo" href="index.html" title="Teachable - Create a Course"></a>
+      <a class="log-in" href="login.html">Log in</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-collapse collapse">
+        <ul>
+          <li class="dropdown-only"><a href='create-account.html'>Create Account</a></li>
+          <li class="dropdown-only"><a href='login.html'>Log In</a></li>
+          <li><a href='features.html'>Features</a></li>
+          <li><a href='pricing.html'>Pricing</a></li>
+          <li><a href='examples.html'>Examples</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href='http://blog.teachable.com/'>Blog</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href='summit9294.html?utm_source=nav'>Summit</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="hero _93">
+  <style>
+    ._93 {
+      margin-bottom: 50px; 
+    }
+  @media (max-width: 991px) {
+    ._93 {
+      margin-bottom: 50px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._93 {
+      margin-bottom: 50px; 
+    }
+  }
+    ._93 h1 {
+      max-width: 650px;
+    }
+    ._93 h2 {
+      max-width: 600px;
+      font-size: 22px;
+      line-height: 33px;
+    }
+    @media (max-width: 767px) {
+      ._93 .hero-div {
+        min-height: 550px;
+      }
+    }
+    @media (min-width: 768px) {
+      ._93 .hero-div, ._93 .container, ._93 .row, ._93 .col-xs-12 {
+        min-height: 765px;
+      }
+      ._93 .container {
+        padding-top: 85px;
+      }
+    }
+  </style>
+  <div class="hero-div" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/co7IBH9uRA6M3UPnx5nO);">
+    <div class="container hero-container">
+      <div class="row">
+        <div class="col-xs-12 vertically-align-contents-except-xs">
+          <div class="hero-text hero-text-left">
+            <h1>Simple and powerful eLearning platform for your enterprise</h1>
+            <h2>Use one simple and reliable solution to train your employees, educate your community, or sell online courses</h2>
+                <a class="orange-button" href="#enterprise-form">Contact us for a private demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="enterprise-logos _94">
+  <style>
+    
+    ._94 {
+      margin-bottom: 0px; 
+    }
+  @media (max-width: 991px) {
+    ._94 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._94 {
+      margin-bottom: 0px; 
+    }
+  }
+  </style>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="default-paragraph">Market leaders use Teachable to enrich their brand &amp; business.</p>
+        <div class="clearfix">
+          <img src="assets/showcase/logo1-492edcd6564167cc91a0162d028da0669ae87f2959ccf683b78b4a176e9338c4.png" />
+          <img src="assets/showcase/logo2-d60d37fa3443fe00a9e47bc2c42a43799a0faf2f1f1d81b9f9441bcb77d17e60.png" />
+          <img src="assets/showcase/logo3-459469bb472753db1c99486b03df57852e15959cc830efe60d984db56f171f9c.png" />
+          <img src="assets/showcase/logo4-64dcd5ab12af07fffbe6fa540d29109f09695865e13a441080a01b03e8e82bdd.png" />
+          <img src="assets/showcase/logo5-522181dfddb7bfe3ab06b9b76d635dbb46fd77748a9b14a850a1cc6b0290bc60.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="horizontal-line _95">
+  <style>
+    ._95 {
+      margin-bottom: 60px; 
+    }
+  @media (max-width: 991px) {
+    ._95 {
+      margin-bottom: 60px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._95 {
+      margin-bottom: 60px; 
+    }
+  }
+  </style>
+  <hr />
+</section>
+
+  <section class="six-icons _96">
+  <style>
+    ._96 {
+      margin-bottom: 160px; 
+    }
+  @media (max-width: 991px) {
+    ._96 {
+      margin-bottom: 160px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._96 {
+      margin-bottom: 79.5px; 
+    }
+  }
+    ._96 img {
+      max-width: 80px;
+      max-height: 80px;
+      display: inline;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    ._96 h2 {
+      max-width: 730px;
+    }
+    ._96 div.default-green-header {
+      color: #FF7F45;
+    }
+    ._96 .image {
+      width: 80px;
+      height: 80px;
+    }
+  </style>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="small-uppercase-text small-header">Go Enterprise</h1>
+        <h2 class="default-header big-header">Powerful features for high-volume businesses in an affordable and easy to use online learning platform</h2>
+      </div>
+    </div>
+      <div class="row first-row">
+        <div class="col-xs-12 col-md-4">
+          <div class="image" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/U7w48oH1RgKOv4Sm2mTE);"></div>
+          <div class="default-green-header match-height-green-headers-row-1">One-stop eLearning solution</div>
+          <div class="default-paragraph">Web hosting, payments, video delivery, and analytics—we’re happy to be the only solution you’ll need.</div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="image" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/tP0F9dOURgWhmLyL99fA);"></div>
+          <div class="default-green-header match-height-green-headers-row-1">Integrate seamlessly</div>
+          <div class="default-paragraph">Easily connect all your tools—from email service providers to calendars to bookkeeping applications.</div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="image" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/7pIv2mWeR12adkRZg6Y9);"></div>
+          <div class="default-green-header match-height-green-headers-row-1">Focus on the content, we’ll do the rest</div>
+          <div class="default-paragraph">Our user-friendly learning platform allows anyone in your organization to publish professional courses in minutes.</div>
+        </div>
+      </div>
+  </div>
+</section>
+
+  <section class="list-image _97">
+  <style>
+    ._97 {
+      margin-bottom: 115px; 
+    }
+  @media (max-width: 991px) {
+    ._97 {
+      margin-bottom: 115px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._97 {
+      margin-bottom: 115px; 
+    }
+  }
+    ._97 {
+      height: 642px;
+    }
+    ._97 .col-md-6:first-of-type {
+      background-color: #FF7F45;
+    }
+  </style>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 vertically-align-contents">
+        <div class="inner-text">
+          <h1 class="default-header">Why choose Teachable?</h1>
+          <div class="markdown"><ul>
+<li>Your own custom domain. (www.yourawesometraining.com)</li>
+<li>  Keep 90%+ of your revenue with lower transactions fees</li>
+<li>  Integrate easily with your email service provider</li>
+<li>  Remove Teachable branding from your course website</li>
+<li>  Invite multiple instructors to teach courses in your school</li>
+<li>  Track course engagement with advanced analytics</li>
+</ul>
+</div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 image" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/wbuPtiApSa6ChfA9aR9c);"></div>
+    </div>
+  </div>
+</section>
+
+  <section class="cta _98">
+  <style>
+    ._98 {
+      margin-bottom: 115px; 
+    }
+  @media (max-width: 991px) {
+    ._98 {
+      margin-bottom: 115px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._98 {
+      margin-bottom: 115px; 
+    }
+  }
+  </style>
+  <div class="container">
+		<div class="row">
+      <div class="col-xs-12">
+        <h1 class="small-uppercase-text">NEED MORE?</h1>
+        <h2 class="default-header" style="max-width: 750px">Need a custom online learning platform? Tell us how we can help</h2>
+        <a href="#enterprise-form" class="orange-button">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="horizontal-line _598">
+  <style>
+    ._598 {
+      margin-bottom: 115px; 
+    }
+  @media (max-width: 991px) {
+    ._598 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._598 {
+      margin-bottom: 0px; 
+    }
+  }
+  </style>
+  <hr />
+</section>
+
+  
+<section class="success-stories _597 hidden-xs hidden-sm">
+  <style>
+    ._597 {
+      margin-bottom: 175px; 
+    }
+  @media (max-width: 991px) {
+    ._597 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._597 {
+      margin-bottom: 0px; 
+    }
+  }
+  </style>
+  <div class="container">
+    <div class="row">
+      <div class="header-section col-md-8 col-md-offset-2">
+        <h1 class="default-header">Success stories</h1>
+        <p class="default-paragraph">Learn how our customers are growing their businesses with Teachable Enterprise - from employee onboarding and customer training to launching six-figure courses</p>
+      </div>
+      <div class="slider-parent">
+        <div class="slider success-stories-slider">
+            <div class="slide success-stories-carousel-slide 1">
+              <div class="left-side">
+                <div class="text-section">
+                  <h3>Intuit</h3>
+                  <p class="default-paragraph">Intuit needed a powerful yet easy online learning platform—they choose Teachable to host their own customer online training program.</p>
+                </div>
+              </div>
+              <img class="logo" src=https://process.filestackapi.com//compress/quality=value:90/9uzd5pnaQrGDOeywiEd7 />
+              <div class="big-image" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/oGqWrOTQ0uELRudii9CJ);"></div>
+            </div>
+            <div class="slide success-stories-carousel-slide 2">
+              <div class="left-side">
+                <div class="text-section">
+                  <h3>StackCommerce</h3>
+                  <p class="default-paragraph">StackCommerce leveraged Teachable’s platform to create a marketplace of 95,000+ students.</p>
+                </div>
+              </div>
+              <img class="logo" src=https://process.filestackapi.com//compress/quality=value:90/YxLqHEIaS8aZOvuQMVFR />
+              <div class="big-image" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/ENABctoRAlYRUOXjHFMA);"></div>
+            </div>
+            <div class="slide success-stories-carousel-slide 3">
+              <div class="left-side">
+                <div class="text-section">
+                  <h3>Headspring</h3>
+                  <p class="default-paragraph">Headspring leveraged Teachable’s functionality to cut their employee onboarding process from 5 days to just 2.</p>
+                </div>
+              </div>
+              <img class="logo" src=https://process.filestackapi.com//compress/quality=value:90/RAyb7ZmwSgOMVwm8rISN />
+              <div class="big-image" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/Uj5wXVWgRTOK84jdNGH5);"></div>
+            </div>
+            <div class="slide success-stories-carousel-slide 4">
+              <div class="left-side">
+                <div class="text-section">
+                  <h3>GNS3 Academy</h3>
+                  <p class="default-paragraph">GNS3 used Teachable’s enterprise solution to generate six figures in online course sales.</p>
+                </div>
+              </div>
+              <img class="logo" src=https://process.filestackapi.com//compress/quality=value:90/OwgkOElQQu2vvYjzjzzy />
+              <div class="big-image" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/AVa1T21uQ3KdT3BYpcpg);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="text-image-with-envelope _99">
+  <style>
+    ._99 {
+      margin-bottom: 30px; 
+    }
+  @media (max-width: 991px) {
+    ._99 {
+      margin-bottom: 30px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._99 {
+      margin-bottom: 30px; 
+    }
+  }
+  </style>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-7 match-height-envelope vertically-align-contents">
+        <div class="inner-text">
+          <h1 class="default-header">Gold-standard support from expert account managers</h1>
+          <div class="default-paragraph">
+            <p>Get access to a dedicated account manager to ensure your success on the platform.</p>
+
+<p>Your account manager is a dedicated point of contact at Teachable, able to help you with everything from initial onboarding to ongoing training and support.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-5 match-height-envelope">
+        <div class="image" style="background-image: url(../s3.amazonaws.com/cms-uploaded-images/gW7YxCefQlG0jX35AoZL_enterprise-accountmanagers.jpg);"></div>
+        <div class="beneath-image">
+          <img class="envelope" src="assets/image-with-envelope/envelope-1079ebfe2bd96657aab6fdac4bd1b49b61669802f149b39c7711e5da89205eff.svg" />
+          <h1 class="default-header"></h1>
+          <div class="default-paragraph">&quot;Teachable made it easy for us to build entire courses within a few hours, ensuring we could deliver on our promise for high-impact education.&quot; -Shopify</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="id-tag _100">
+  <style>
+    ._100 {
+      padding-bottom: 40px; 
+    }
+  @media (max-width: 991px) {
+    ._100 {
+      padding-bottom: 40px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._100 {
+      padding-bottom: 40px; 
+    }
+  }
+    ._100 {
+      background-color: #FFFFFF
+    }
+  </style>
+    <style>
+      @media (min-width: 992px) {
+        ._100 {
+          height: 1px;
+        }
+      }
+    </style>
+    <style>
+      @media (min-width: 768px) and (max-width: 991px) {
+        ._100 {
+          height: 1px;
+        }
+      }
+    </style>
+    <style>
+      @media (max-width: 767px) {
+        ._100 {
+          height: 1px;
+        }
+      }
+    </style>
+  <div id="enterprise-form"></div>
+</section>
+
+  <section class="enterprise-form _101">
+  <style>
+    
+    ._101 {
+      margin-bottom: 50px; 
+    }
+  @media (max-width: 991px) {
+    ._101 {
+      margin-bottom: 50px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._101 {
+      margin-bottom: 50px; 
+    }
+  }
+  </style>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="default-header">Get started today</h1>
+        <p class="default-paragraph">Tell us what your needs are and we'll be in touch shortly</p>
+        <div class="form">
+          <label for="form-name" class="small-uppercase-text">Your Name</label>
+          <div id="error-name" class="form-error">Please enter your name.</div>
+          <input id="form-name" type="text" />
+          <label for="form-company" class="small-uppercase-text">Company Name</label>
+          <div id="error-company" class="form-error">Please enter your company's name.</div>
+          <input id="form-company" type="text" />
+          <label for="form-company-email" class="small-uppercase-text">Company Email Address</label>
+          <div id="error-company-email" class="form-error">Please enter a valid email address.</div>
+          <input id="form-company-email" type="text" name="" />
+          <label for="form-phone" class="small-uppercase-text">Phone Number</label>
+          <div id="error-phone" class="form-error">Please enter a phone number.</div>
+          <input id="form-phone" type="text" />
+          <label for="form-message" class="small-uppercase-text">Your Message</label>
+          <div id="error-message" class="form-error">Please enter a message.</div>
+          <textarea id="form-message" rows="5"></textarea>
+          <label for="form-plan" class="small-uppercase-text">What Do You Plan To Use Teachable For?</label>
+          <div id="error-plan" class="form-error">Please select an option.</div>
+          <div class="select-container">
+            <select id="form-plan">
+              <option value="">(Please select one)</option>
+              <option value="Selling courses to the public">Selling courses to the public</option>
+              <option value="Internal training">Internal training</option>
+              <option value="Customer training">Customer training</option>
+            </select>
+          </div>
+          <label for="form-revenue" class="small-uppercase-text">Projected Revenue</label>
+          <div id="error-revenue" class="form-error">Please select an option.</div>
+          <div class="select-container">
+            <select id="form-revenue">
+              <option value="">(Please select one)</option>
+              <option value="$0 - $25K">$0 - $25K / month</option>
+              <option value="$25K - $100K">$25K - $100K / month</option>
+              <option value="$100K - $500K">$100K - $500K / month</option>
+              <option value="$500K+">$500K+ / month</option>
+            </select>
+          </div>
+          <label for="form-users" class="small-uppercase-text">Projected Users</label>
+          <div id="error-users" class="form-error">Please select an option.</div>
+          <div class="select-container">
+            <select id="form-users">
+              <option value="">(Please select one)</option>
+              <option value="Less than 100">Less than 100</option>
+              <option value="100 - 1,000">100 - 1,000</option>
+              <option value="1,000 - 10,000">1,000 - 10,000</option>
+              <option value="10,000 - 100,000">10,000 - 100,000</option>
+              <option value="100,000+">100,000+</option>
+            </select>
+          </div>
+          <div class="orange-button">
+            Send message
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="big-image _102">
+  <style>
+    ._102 {
+      margin-bottom: 0px; 
+    }
+  @media (max-width: 991px) {
+    ._102 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._102 {
+      margin-bottom: 0px; 
+    }
+  }
+  </style>
+  <img src=https://process.filestackapi.com//compress/quality=value:90/OyZcujDrS9Opk7iqiHsz  />
+  <div class="big-image-div" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/OyZcujDrS9Opk7iqiHsz); min-height: 375px;"></div>
+</section>
+
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2 first-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Product</h4>
+          <li>
+            <a href="examples.html">Examples</a>
+          </li>
+          <li>
+            <a href="features.html">Features</a>
+          </li>
+          <li>
+            <a href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 second-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Learn</h4>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://teachable.zendesk.com/hc/en-us">Knowledge Base</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="http://blog.teachable.com/">Blog</a>
+          </li>
+          <li>
+            <a href="enterprise.html">Enterprise</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 third-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Company</h4>
+          <li>
+            <a href="careers.html">Careers</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="http://changelog.teachable.com/">Product updates</a>
+          </li>
+          <li>
+            <a href="affiliates.html">Become an affiliate</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="new-homepage-footer-links">
+          <h4>Legal</h4>
+          <li>
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="terms-of-use.html">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="new-homepage-footer-links">
+          <h4>Get in touch</h4>
+          <li>We're here if you need us:</li>
+          <li>
+            <a href="cdn-cgi/l/email-protection.html#35464045455a474175415054565d545759501b565a58">Contact us</a>
+          </li>
+          <li class="social-icons">
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.facebook.com/teachableHQ/">
+              <img src="assets/footer/facebook_icon-4123fb4aef6386d557ed654543029d5964d42775cc972ce186789292243d19e7.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://twitter.com/teachable">
+              <img src="assets/footer/twitter_icon-dfcd749e19035479055f2de4729aa45470ce648b11f56aad4534a89d83947930.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.pinterest.com/teachablehq/">
+              <img src="assets/footer/pinterest_icon-f81e2671629b0d1716cbdce81fd1500d598c50e9d65ee3c50950dcc89bfbe827.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.instagram.com/teachable/">
+              <img src="assets/footer/instagram_icon-1e222076e9d388360f27a800afdd9571892dd5143ff480daea7bd879c84f8005.svg" width="32px">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 new-homepage-footer-logo">
+        <a href="index.html">
+          <img alt='' src="assets/teachable-logo-orange-3ece80f83dd5fdb472495dd41735abbb3e685c351b2e54a84aaee8c56e9f1283.svg" class="new-homepage-footer-logo">
+        </a>
+        <span>All rights reserved Teachable&trade; 2017</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="cdn-cgi/scripts/78d64697/cloudflare-static/email-decode.min.js"></script></body>
+
+<!-- Mirrored from teachable.com/enterprise by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2017 21:15:21 GMT -->
+</html>

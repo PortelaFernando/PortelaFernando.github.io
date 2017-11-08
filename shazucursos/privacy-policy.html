@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from teachable.com/privacy-policy by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2017 21:15:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"438e27ebc2","applicationID":"68773785","transactionName":"IVlZFhNYCVQDRx5DAAVTRE0SXwpP","queueTime":167,"applicationTime":127,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <title>Teachable | Privacy Policy</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-92347034e89ac47d292a0f372ef5d1542ab9ab80b0ea5b0f822120eb0c7f1dbd.ico" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" media="all" href="assets/application-5746b84050e5ad44e27326916a08d5af06b8b8024af04edc458f540b9e7aa887.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="izONhTcOe/tv2xJz92PNqcZvwdHMYaLgtdjcizER0dPYoD7gTlZw5ZSfRP4QQegk80DcvlJYxtY81o1NId8T0w==" />
+      
+      <meta name="description" content="Our privacy policy" />
+    <link rel="canonical" href="privacy-policy.html" />
+      <meta name="og:description" content="Our privacy policy" />
+      <meta property="og:title" content="Teachable | Privacy Policy" />
+    <meta name="og:image" content="https://cdn.filepicker.io/api/file/Wbk4XtAQQiq1BXDff80D" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:description" content="Our privacy policy" />
+      <meta property="twitter:title" content="Teachable | Privacy Policy" />
+    <meta name="twitter:image" content="https://cdn.filepicker.io/api/file/Wbk4XtAQQiq1BXDff80D" />
+    <script src="assets/application-f386174a3d2263d9eea7f61a48a0fbeb56c15c7509345301c4892990e1b85da0.js"></script>
+    
+      <!-- LINKEDIN (for ads) -->
+      <script type="text/javascript">
+        _linkedin_data_partner_id = "30017";
+      </script>
+      <script type="text/javascript">
+        (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "../snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+      </script>
+      <!-- OPTIMIZELY (for A/B testing) -->
+      <script src="../cdn.optimizely.com/js/2602691345.js"></script>
+      <!-- RETENTION by PROFITWELL (for dunning) -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['ProfitWellObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+        })(window,document,'script','../dna8twue3dlxq.cloudfront.net/js/profitwell.js','profitwell');
+        profitwell('auth_token', 'c73a37dec4e02a585a09bd1997ebfa57');
+      </script>
+      <!-- PINTEREST (for ads) -->
+      <script type="text/javascript">
+        !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("../s.pinimg.com/ct/core.js");
+        pintrk('load','2615747628605');
+      </script>
+      <noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2615747628605&amp;noscript=1" />
+      </noscript>
+      <!-- RIGHTMESSAGE (for personalization) -->
+      <script type="text/javascript">
+        (function(p, a, n, d, o) {
+            a = document.createElement('script');
+            a.type = 'text/javascript'; a.async = true; a.src = p;
+            n = document.getElementsByTagName('script')[0]; n.parentNode.insertBefore(a, n);
+        })('../tag.rightmessage.io/1023339.html');
+      </script>
+      <!-- SEGMENT -->
+      <script>
+        window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+        window.analytics.load("tnh8fhmjpo");
+        analytics.ready(function() {
+          ga('create', 'UA-47288176-1', 'auto', {'name': 'secondTracker'});
+          ga('secondTracker.send', 'pageview');
+        });
+      </script>
+      <!-- PEBBLE POST -->
+      <script type="text/javascript">
+        window._pp = window._pp || {};
+        _pp.siteId = 1468;
+        (function() {
+          var ppjs = document.createElement('script');
+          ppjs.type = 'text/javascript';
+          ppjs.async = true;
+          ppjs.src = ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            '//cdn.pbbl.co/r/' + _pp.siteId + '.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ppjs, s);
+        })();
+      </script>
+  </head>
+    <body class="body-public ">
+      <div class="modal-background"></div>
+
+      <div class="webinar-modal-container modal-container vertically-align-contents">
+  <div class="webinar-modal">
+    <img class="close-modal-button x-button" src="assets/modals/modal-close-3e859097c030cd06db8a3856942e423ece061131abd9917d5cc825326c651c81.png" />
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-4">
+        <img src="assets/modals/cam-and-jess-375b2bfa7b9ab61413a25003a1c09862d1702874bc17a01f9f35edd8e4283397.png" />
+      </div>
+      <div class="col-xs-12 col-md-7 col-md-offset-1 vertically-align-contents">
+        <div class="inner-text">
+          <div class="small-uppercase-text"></div>
+          <div class="text-container">
+            <div class="default-modal-header">
+              Learn how to easily create your Teachable school in our live workshop
+            </div>
+            <p class="default-paragraph">In this free live workshop, learn how to setup your first course on Teachable and start teaching this week</p>
+          </div>
+          <div class="input-container">
+            <div class="spinner"></div>
+            <input type="text" placeholder="Email address" />
+            <a class="orange-button register-button">Register</a>
+            <div class="thank-you">
+              <div class="default-modal-header">
+                Thank you!
+              </div>
+              <p class="default-paragraph">You have registered for the webinar.</p>
+              <a class="orange-button close-modal-button">OK</a>
+            </div>
+            <div class="duplicate">
+              You have already registered for this webinar.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="exit-intent-modal-container modal-container vertically-align-contents">
+  <div class="exit-intent-modal">
+    <button type="button" class="close close-modal-button">
+      &times;
+    </button>
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-4">
+        <img src="assets/modals/ebook-cover-mockup-894ef52e921f90e1357f4acef975a1f7e472dd9750295803df50dbc2e8654a46.png" />
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <h1>Get Our Course Creation Book</h1>
+        <p>Learn how to create content for videos, slides, interviews & more to build your own online course!</p>
+        <input type="text" placeholder="Email Address" />
+        <button class="download-button" type="button" name="button">Download now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <section class="_27 clearfix transparent nav-menu">
+  <style>
+    
+    ._27 {
+      margin-bottom: 0px; 
+    }
+  @media (max-width: 991px) {
+    ._27 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._27 {
+      margin-bottom: 0px; 
+    }
+  }
+  </style>
+  <div class="container">
+    <div class="row">
+      <a class="create-course" href="create-account.html">Create a course</a>
+      <a class="teachable-logo" href="index.html" title="Teachable - Create a Course"></a>
+      <a class="log-in" href="login.html">Log in</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-collapse collapse">
+        <ul>
+          <li class="dropdown-only"><a href='create-account.html'>Create Account</a></li>
+          <li class="dropdown-only"><a href='login.html'>Log In</a></li>
+          <li><a href='features.html'>Features</a></li>
+          <li><a href='pricing.html'>Pricing</a></li>
+          <li><a href='examples.html'>Examples</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href='http://blog.teachable.com/'>Blog</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href='summit9294.html?utm_source=nav'>Summit</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="hero _28">
+  <style>
+    ._28 {
+      margin-bottom: 75px; 
+    }
+  @media (max-width: 991px) {
+    ._28 {
+      margin-bottom: 75px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._28 {
+      margin-bottom: 75px; 
+    }
+  }
+    ._28 h1 {
+      max-width: none;
+    }
+    ._28 h2 {
+      max-width: none;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    @media (max-width: 767px) {
+      ._28 .hero-div {
+        min-height: 500px;
+      }
+    }
+    @media (min-width: 768px) {
+      ._28 .hero-div, ._28 .container, ._28 .row, ._28 .col-xs-12 {
+        min-height: 415px;
+      }
+      ._28 .container {
+        padding-top: 85px;
+      }
+    }
+  </style>
+  <div class="hero-div" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/Wbk4XtAQQiq1BXDff80D);">
+    <div class="container hero-container">
+      <div class="row">
+        <div class="col-xs-12 vertically-align-contents-except-xs">
+          <div class="hero-text hero-text-center">
+            <h1>Privacy Policy</h1>
+            <h2>Last updated May 19, 2017</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="markdown-partial _1533">
+  <style>
+  ._1533 {
+      margin-bottom: 75px; 
+    }
+  @media (max-width: 991px) {
+    ._1533 {
+      margin-bottom: 75px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._1533 {
+      margin-bottom: 75px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._1533 {
+      width: none;
+    }
+  }
+  @media (min-width: 768px), (max-width: 991px) {
+    ._1533 {
+      width: none;
+    }
+    ._1533 .text-container {
+      width: 66%
+    }
+  }
+  @media (min-width: 992px) {
+    ._1533 {
+      width: none;
+    }
+    ._1533 .text-container {
+      width: 66%
+    }
+  }
+  </style>
+  <div class="text-container">
+    <h4><strong>PLEASE READ THIS DOCUMENT CAREFULLY.</strong></h4>
+
+<p>This Privacy Policy applies to the Teachable websites and related subdomains, mobile applications, and media (the “Sites”) managed by Teachable, Inc. (“Teachable”), and the online course creation platform that enables independent instructors (“Instructors”) to deliver live and recorded instruction and learning services as massive open online courses (“Courses”) to end-users (“Students,” collectively with Instructors, “you” or the “Users,” each a “User”) (the “Services”). This Privacy Policy describes the information that we collect from Users as part of the normal operation of our Sites and in providing the Services to you, and how we use and disclose this information.</p>
+
+<p>Please read this Privacy Policy carefully prior to accessing or using the Sites and/or Services. By accessing or using the Sites and/or Services, you consent to Teachable’s data practices, including the use and disclosure of your personal information, and agree to terms and conditions stated in this Privacy Policy. Do not access or use the Sites and/or Services if you do not agree with the following policies and practices. This Privacy Policy is incorporated into and subject to our Terms of Use.
+<br><br></p>
+
+<h2>Our Policy Concerning Children</h2>
+
+<p>As stated in our Terms of Use, the Sites and Services are offered and available only to Users who are 18 years of age or older, or to Users who are between the ages of 13 and 18 years old and who have obtained parental consent prior to accessing any Sites, registering an account, or using the Services. If you do not meet this eligibility requirement, you may not use the Sites or Services. Teachable does not knowingly collect or store any personal information from or about children under the age of 13. We will delete such information if we become aware that it has been submitted through the Sites. Parents or legal guardians who believe that Teachable might have any information from or about a child under the age of 13 may submit a request to <a href="cdn-cgi/l/email-protection.html#81e2eeeff5e0e2f5c1f5e4e0e2e9e0e3ede4afe2eeec"><span class="__cf_email__" data-cfemail="92f1fdfce6f3f1e6d2e6f7f3f1faf3f0fef7bcf1fdff">[email&#160;protected]</span></a> and request that such information be removed.
+<br><br></p>
+
+<h2>The Information We May Collect</h2>
+
+<p>Our primary purpose in collecting information from you is to provide you and our other Users with a safe, smooth, efficient, and customized experience. We only collect information about you that we consider to be necessary for providing services and features that optimize your user experience and to make it safer and easier. We may collect different information from or about you depending on the manner in which you use the Sites and/or Services.
+<br><br></p>
+
+<h3>Personally Identifiable Information</h3>
+
+<p>Teachable may collect and process information that could be directly associated with you without the aid of additional information, such as your full name, company name where applicable, user name and password, phone number, email address, billing or mailing address, or credit card information (“Personally Identifiable Information,” or “PII”). In addition, information that you submit, or that we collect, that is not Personally Identifiable Information but is necessary for the proper functioning of our Sites and Services is termed Demographic and Usage Information (see below), which is generally non-identifying, but associated with you as a specific and identifiable person, may become PII. You can choose not to provide us with certain information, but that may result in you being unable to use certain features of our website because such information may be required in order for you to register for an account; purchase products or services; participate in a contest, promotion, survey, or sweepstakes; ask a question; or initiate other transactions on our website.
+<br><br></p>
+
+<h4>Payment Information</h4>
+
+<p>Instructor monthly or annual subscription fees are processed through Teachable’s payment gateway. Student registration fees for paid Courses may, at the Instructor’s election, either be processed through Teachable’s payment gateway or through a custom third party payment gateway with PayPal or Stripe. This is discussed further in our Instructor Policy. For the purposes of billing subscription fees and Course registration fees processed through Teachable’s payment gateway, we may request your credit card and certain contact information, such as a billing address. We retain credit card numbers internally solely for the purpose of processing Instructor subscription fees, and protect such information through SSL encryption technology. Payments processed by third parties like PayPal and Stripe are subject to the terms of use and privacy policies of those payment gateways and are not accessible or controlled by Teachable.
+<br><br></p>
+
+<h4>Mobile Application</h4>
+
+<p>Teachable offers a mobile application and may, according to your privacy settings, collect certain information about Users and their devices when our Services are accessed through our application on Users’ mobile or other Internet connected devices. Teachable does not ask for, access, or track any precise location-based information. We use mobile analytics software to allow us to better understand the functionality of our Services on Users’ mobile or other Internet connected devices, which may record data relating to usage, performance, and download and will be treated like Demographic and Usage Data (discussed below).
+<br><br></p>
+
+<h4>Information from Third Party Platforms</h4>
+
+<p>Users may allow the Sites to interact with one or more third party social networks or platforms, which will provide data about you to us (“Platform(s)”). The information you allow Teachable to access varies by Platform, and it is affected by the privacy settings you and those that you are connected with establish using such Platforms. Platforms are operated, controlled, and maintained by third parties that are not operated, controlled, or maintained by Teachable. You should ensure that you read their terms of use or service and privacy policies to understand how they collect and treat your data and what data they might share with us or third parties.
+<br><br></p>
+
+<h4>Demographic and Usage Data</h4>
+
+<p>Teachable may collect information through the use of cookies, HTML5 local storage, and other similar technologies. “Cookies” are alphanumeric identifiers in the form of text files that are inserted and stored by your web browser on your hard drive. Teachable may set and access cookies on your computer or wireless device to track and store preferential information about you. We may gather anonymous information about Users through cookie technology on an individual and aggregate level. Such information is used within Teachable internally and is only shared with third party advertisers, if any, on an aggregated or non-personally identifiable basis. You may opt out of receiving cookies from our Sites by following the instructions in your web browser. Note, however, that deleting cookies or directing your browser to refuse them may limit your ability to use certain portions of our Sites that require cookies to function. As is true of most other websites, Teachable gathers certain information automatically and stores it in log files. This information may include Internet protocol (IP) addresses, browser type, operating system, and other usage information about the use of the Sites, including a history of the pages you view. We may combine this automatically collected log information with other information we collect about you, including PII, to improve Services, including customized recommendations and advertising, and to improve marketing. Web Beacons, also known as pixel tags and clear GIFs, (“Web Beacons”), are electronic images that allow a website to access cookies and help track marketing campaigns and general usage patterns of visitors to those websites. Web Beacons can recognize certain types of information, such as cookie numbers, time and date of a page view, and a description of the page where the Web Beacons are placed. No PII about you is shared with third parties through the use of Web Beacons on the Sites. However, through Web Beacons, we may collect general information that will not personally identify you, such as: Internet browser, operating system, IP address, date of visit, time of visit and path taken through the Site. Teachable may use Web Beacons internally to count visitors and recognize visitors through cookies. Teachable may collect other non-PII as Users browse the Sites, such as the web traffic, what pages are visited, from where Users come, and other demographic information, such as age, gender, and search habits. We may compile this non-personally identifying data to enable statistical analysis of our Services that would be used internally or with external assistance to make improvements to our Sites. Teachable may provide non-PII to third parties, including advertisers, though these parties will be unable to identify Users based on this anonymous information.
+<br><br></p>
+
+<h4>How We Use the Information We Collect</h4>
+
+<p>Teachable uses the information it collects for a number of purposes. We may use it to respond to Users’ inquiries and otherwise correspond with Users, to process transactions that Users request, to maintain User accounts, to preserve the security and integrity of the Sites and Services, to conduct market research or surveys, and to administer, review, and/or improve the content of the Sites and Services. We may also use the information to communicate with Users about Courses and other services that we think may be of interest.</p>
+
+<p>Teachable provides to Instructors the following information about the Students enrolled in their respective Courses: (1) name, (2) email address, and (3) the Instructor’s Course in which the Student has enrolled. Teachable does not disclose any other information about Students to Instructors, and Students assume full responsibility for the disclosure and use of any other personal information the Student chooses to disclose to any Instructor or other User, which at all times shall be subject to the terms of this Privacy Policy.</p>
+
+<p>Teachable may use and share non-PII we collect with third parties to develop and deliver targeted advertising on the Sites or applications of third parties, and to analyze and report on advertising you see. We may combine non-PII we collect with additional non-PII collected from other sources. We also may share aggregated, non-personal information, or personal information in hashed, non-human readable form, with third parties, including advisors, advertisers and investors. For example, we may engage a third party acting on our behalf to collect web log data from you (including IP address and information about your browser or operating system) when you use the Sites and other websites you may access during your Internet browsing session, or place or recognize a unique cookie on your browser to enable you to receive customized advertisements or content. For more information regarding your choices about how third parties collect information about you on our Sites see the section titled Do-Not-Track Procedures below.</p>
+
+<p>Except as stated above, Teachable may disclose any of your information, which in some cases includes PII, in the following situations:</p>
+
+<ul>
+<li><p>With your consent. Teachable may transmit your PII to a third party when you give us express permission to do so. For example, this may occur when we complete a transaction on your behalf or that you request.</p></li>
+<li><p>With our authorized service providers. Teachable may share your PII with our authorized service providers that perform certain services on our behalf. These services may include processing credit card payments, providing customer service and marketing assistance, performing business and sales analysis, supporting our website functionality, and supporting contests, sweepstakes, surveys and other features offered through our website. These service providers may have access to PII needed to perform their functions but are not permitted to share or use such information for any other purposes.</p></li>
+<li><p>With our business partners. When you make purchases, reservations or engage in promotions offered through the Sites, we may share PII with the businesses with which we partner to offer you those products, services, promotions, contests and/or sweepstakes. When you elect to engage in a particular merchant’s offer or program, you authorize us to provide your email address and other information to that merchant.</p></li>
+<li><p>In connection with a substantial corporate transaction, such as the sale of our business; a divestiture, merger, consolidation, or asset sale; or in the event of bankruptcy. If another company acquires Teachable, that company will take on all responsibility for the information we collect, including PII, and it will assume all rights and obligations with respect to that information. Should this happen, the acquiring company may implement its own policies with respect to your information.</p></li>
+<li><p>If we are required to disclose information by law. Teachable may be obligated to disclose a User’s personal information if directed by a court of law or other governmental entity. Without limiting the foregoing, we reserve the right to disclose such information where we have a good faith basis to believe that such action is necessary to: (a) comply with the law; (b) protect and defend Teachable’s rights and property, or safety of Teachable, our Users, our employees, or others; (c) protect against misuse or unauthorized use of the Sites and/or Services and/or to enforce our Terms of Use or other agreements or policies; and/or (d) protect the personal safety or property of Users or the public. In the event that your information is disclosed, we will comply with the law and make commercially reasonable efforts to notify you.</p></li>
+</ul>
+
+<p>Please be aware that all of the information that you disclose or content that you post in your user profile, forum posts, comments, or other public portions of the Sites becomes public information. Because this information is publicly available, we cannot control how others treat it so we ask all Users to exercise care in deciding what information they chose to share. If you terminate your Teachable account, we may retain your personal information for administrative purposes but will not display it publicly or share it in any other way.
+<br><br></p>
+
+<h2>Data Retention</h2>
+
+<p>We will retain your data for a period of up to three (3) months (or the maximum time required by law) after your account (a) has been cancelled, (b) is on a credit hold for nonpayment, or (c) ends after a trial period. After this time, the information will be permanently removed from our servers and no one will be able to access it. Your personal information such as your email, name, type of account you had, and payment history will remain on file for a period of up to ten (10) years, or the maximum time required by law, to comply with government regulations.
+<br><br></p>
+
+<h3>Access to Your Information</h3>
+
+<p>Teachable will provide each User with access to PII that it provides to Teachable for as long as we maintain that information in a readily accessible format, and will work with Users to correct any error in their respective PII. If you wish to access or correct any PII that you have submitted through the Sites, or to have Teachable completely remove your PII from our systems, please send an email with your specific request to <a href="cdn-cgi/l/email-protection.html#c6a5a9a8b2a7a5b286b2a3a7a5aea7a4aaa3e8a5a9ab"><span class="__cf_email__" data-cfemail="63000c0d1702001723170602000b02010f064d000c0e">[email&#160;protected]</span></a>. Additionally, note that registered Users may change visibility of their respective personal information throughout the Sites by editing their personal profiles.</p>
+
+<p>Users who provide their email addresses to Teachable will always have the opportunity to opt out of receiving email newsletters and promotions through the unsubscribe link in the email communications or by logging into and changing the preferences for their user account. We may send you other types of transactional and relationship e-mail communications, such as service announcements, administrative notices, and surveys, without offering you the opportunity to opt out of receiving them. Please note that changing information in your account, or otherwise opting out of receipt of promotional email communications will only affect future activities or communications from us. If we have already provided your information to a third party (such as a credit card processing partner) before you changed your preferences or updated your information, you may have to change your preferences directly with that third party.
+<br><br></p>
+
+<h3>Securing Your Information</h3>
+
+<p>Teachable takes a range of security measures designed to protect your personal information and keep it confidential (unless it is non-confidential by nature) and free from any unauthorized alteration. For example, only authorized employees are permitted to access personal information, and they may do so only for permitted business functions. In addition, we use encryption in the transmission of your sensitive personal information between your system and ours, and we use firewalls to help prevent unauthorized persons from gaining access to your personal information. However, the Internet by its nature is not a secure environment and the nature of security risks is constantly evolving, as are the technical and organizational industry standards relating to management of those risks. Therefore, the complete security of any personal information collected, stored, or used by Teachable cannot be guaranteed. In the unlikely event that an unauthorized third party compromises Teachable’s security measures, Teachable will not be responsible for any damages directly or indirectly caused by an unauthorized third party’s ability to view, use, or disseminate such information.
+<br><br></p>
+
+<h3>Third Parties and Other Information Collectors</h3>
+
+<p>Except as otherwise expressly included in this Privacy Policy, this document only addresses the use and disclosure of information we collect from you. To the extent that you disclose your information to other parties through the Sites, whether between Instructor and Student or other Users or individuals, different rules may apply to their use, collection, and disclosure of the personal information you disclose to them. Since we do not control the information use, collection, or disclosure policies of third parties, you are subject to their privacy policies. The Sites may include links to third party websites, which contain separate and independent privacy policies. Teachable is not responsible for the practices of, or content contained within, these third party websites, and strongly recommends that Users read and review the privacy policy of any such sites that they visit.
+<br><br></p>
+
+<h3>Do-Not-Track Procedures</h3>
+
+<p>Note that any Do-Not-Track instructions from your browser or similar mechanism will not affect our collection of the data that Users voluntarily provide to Teachable through such means as browsing the Sites, signing up for any of the Services or any Courses, entering PII into information fields on the Sites, or posting on any of our forums or blogs. Be advised that third parties are free to collect any information that you volunteer to Teachable that is visible to the public. Therefore, please do not provide Teachable with any information that you do not want collected.
+<br><br></p>
+
+<h3>California Civil Code Section 1798.83 Compliance</h3>
+
+<p>Under California law, upon request Teachable is required to disclose to its California customers the identity of any third parties to whom we have disclosed PII within the previous calendar year, along with the type of PII disclosed, for the third parties&#39; direct marketing purposes. Please note that under California law, we are only required to respond to a customer request once during any calendar year.  If you are a California resident and would like to make such a request, email us at <a href="cdn-cgi/l/email-protection.html#01626e6f7560627541756460626960636d642f626e6c"> <span class="__cf_email__" data-cfemail="5d3e3233293c3e291d29383c3e353c3f3138733e3230">[email&#160;protected]</span></a>.
+<br><br></p>
+
+<h3>Users Outside of the United States</h3>
+
+<p>The Sites are hosted in the United States and are governed by the laws of the United States. If you are using the Sites outside the United States, please be aware that your information will be transferred to, stored, and processed in the United States where Teachable’s servers and databases are located. By using the Sites, you consent to the transfer of information to countries outside your country of residence.
+<br><br></p>
+
+<h3>No Rights of Third Parties</h3>
+
+<p>This Privacy Policy does not create rights enforceable by third parties or require disclosure of any personal information relating to users of the website.
+<br><br></p>
+
+<h2>Changes to the Privacy Policy</h2>
+
+<p>We may review and update this Privacy Policy from time to time in our sole discretion. It is the responsibility of Users to keep abreast of those changes. All changes are effective immediately when posted. As such, your continued use of the Sites or Services after Teachable makes changes to this Privacy Policy is deemed to be acceptance of those changes, so please check this webpage periodically for updates. In addition, Teachable will notify Users of any material or significant changes to this Privacy Policy relating to the way in which we use your personal information by placing a notice on the Sites and notifying registered Users via email.
+<br><br></p>
+
+<h2>Contact Us</h2>
+
+<p>If you have questions or concerns regarding this Privacy Policy, you may contact us at:</p>
+
+<p>Teachable, Inc.<br/>50 W. 17th Street, 4th Floor<br/>New York, New York 10011<br/>Email: <a href="cdn-cgi/l/email-protection.html#8cefe3e2f8edeff8ccf8e9edefe4edeee0e9a2efe3e1"><span class="__cf_email__" data-cfemail="b3d0dcddc7d2d0c7f3c7d6d2d0dbd2d1dfd69dd0dcde">[email&#160;protected]</span></a></p>
+
+  </div>
+</section>
+
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2 first-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Product</h4>
+          <li>
+            <a href="examples.html">Examples</a>
+          </li>
+          <li>
+            <a href="features.html">Features</a>
+          </li>
+          <li>
+            <a href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 second-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Learn</h4>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://teachable.zendesk.com/hc/en-us">Knowledge Base</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="http://blog.teachable.com/">Blog</a>
+          </li>
+          <li>
+            <a href="enterprise.html">Enterprise</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 third-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Company</h4>
+          <li>
+            <a href="careers.html">Careers</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="http://changelog.teachable.com/">Product updates</a>
+          </li>
+          <li>
+            <a href="affiliates.html">Become an affiliate</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="new-homepage-footer-links">
+          <h4>Legal</h4>
+          <li>
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="terms-of-use.html">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="new-homepage-footer-links">
+          <h4>Get in touch</h4>
+          <li>We're here if you need us:</li>
+          <li>
+            <a href="cdn-cgi/l/email-protection.html#295a5c5959465b5d695d4c484a41484b454c074a4644">Contact us</a>
+          </li>
+          <li class="social-icons">
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.facebook.com/teachableHQ/">
+              <img src="assets/footer/facebook_icon-4123fb4aef6386d557ed654543029d5964d42775cc972ce186789292243d19e7.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://twitter.com/teachable">
+              <img src="assets/footer/twitter_icon-dfcd749e19035479055f2de4729aa45470ce648b11f56aad4534a89d83947930.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.pinterest.com/teachablehq/">
+              <img src="assets/footer/pinterest_icon-f81e2671629b0d1716cbdce81fd1500d598c50e9d65ee3c50950dcc89bfbe827.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.instagram.com/teachable/">
+              <img src="assets/footer/instagram_icon-1e222076e9d388360f27a800afdd9571892dd5143ff480daea7bd879c84f8005.svg" width="32px">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 new-homepage-footer-logo">
+        <a href="index.html">
+          <img alt='' src="assets/teachable-logo-orange-3ece80f83dd5fdb472495dd41735abbb3e685c351b2e54a84aaee8c56e9f1283.svg" class="new-homepage-footer-logo">
+        </a>
+        <span>All rights reserved Teachable&trade; 2017</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="cdn-cgi/scripts/78d64697/cloudflare-static/email-decode.min.js"></script></body>
+
+<!-- Mirrored from teachable.com/privacy-policy by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2017 21:15:28 GMT -->
+</html>

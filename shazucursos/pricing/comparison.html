@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from teachable.com/pricing/comparison by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2017 21:15:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"438e27ebc2","applicationID":"68773785","transactionName":"IVlZFhNYCVQDRx5DAAVTRE0SXwpP","queueTime":5,"applicationTime":8,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <title>Teachable | Pick the Right Pricing Plan for You</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon-92347034e89ac47d292a0f372ef5d1542ab9ab80b0ea5b0f822120eb0c7f1dbd.ico" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" media="all" href="../assets/application-5746b84050e5ad44e27326916a08d5af06b8b8024af04edc458f540b9e7aa887.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="IAfN021iZwgayiZ+jt8pfR9LSImoG3c6txDUWy1EDuDvGdtEJS6airSURxLjuMUNSXvACcV/tfAEucm+ksFzPQ==" />
+      
+      <meta name="description" content="Compare all four of our plans in one place and choose the one that fits your needs." />
+    <link rel="canonical" href="comparison.html" />
+      <meta name="og:description" content="Compare all four of our plans in one place and choose the one that fits your needs." />
+      <meta property="og:title" content="Teachable | Pick the Right Pricing Plan for You" />
+    <meta name="og:image" content="https://cdn.filepicker.io/api/file/GZ4fa2XgQCRkjaadlLLg" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:description" content="Compare all four of our plans in one place and choose the one that fits your needs." />
+      <meta property="twitter:title" content="Teachable | Pick the Right Pricing Plan for You" />
+    <meta name="twitter:image" content="https://cdn.filepicker.io/api/file/GZ4fa2XgQCRkjaadlLLg" />
+    <script src="../assets/application-f386174a3d2263d9eea7f61a48a0fbeb56c15c7509345301c4892990e1b85da0.js"></script>
+    
+      <!-- LINKEDIN (for ads) -->
+      <script type="text/javascript">
+        _linkedin_data_partner_id = "30017";
+      </script>
+      <script type="text/javascript">
+        (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "../../snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+      </script>
+      <!-- OPTIMIZELY (for A/B testing) -->
+      <script src="../../cdn.optimizely.com/js/2602691345.js"></script>
+      <!-- RETENTION by PROFITWELL (for dunning) -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['ProfitWellObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+        })(window,document,'script','../../dna8twue3dlxq.cloudfront.net/js/profitwell.js','profitwell');
+        profitwell('auth_token', 'c73a37dec4e02a585a09bd1997ebfa57');
+      </script>
+      <!-- PINTEREST (for ads) -->
+      <script type="text/javascript">
+        !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("../../s.pinimg.com/ct/core.js");
+        pintrk('load','2615747628605');
+      </script>
+      <noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2615747628605&amp;noscript=1" />
+      </noscript>
+      <!-- RIGHTMESSAGE (for personalization) -->
+      <script type="text/javascript">
+        (function(p, a, n, d, o) {
+            a = document.createElement('script');
+            a.type = 'text/javascript'; a.async = true; a.src = p;
+            n = document.getElementsByTagName('script')[0]; n.parentNode.insertBefore(a, n);
+        })('../../tag.rightmessage.io/1023339.html');
+      </script>
+      <!-- SEGMENT -->
+      <script>
+        window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+        window.analytics.load("tnh8fhmjpo");
+        analytics.ready(function() {
+          ga('create', 'UA-47288176-1', 'auto', {'name': 'secondTracker'});
+          ga('secondTracker.send', 'pageview');
+        });
+      </script>
+      <!-- PEBBLE POST -->
+      <script type="text/javascript">
+        window._pp = window._pp || {};
+        _pp.siteId = 1468;
+        (function() {
+          var ppjs = document.createElement('script');
+          ppjs.type = 'text/javascript';
+          ppjs.async = true;
+          ppjs.src = ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            '//cdn.pbbl.co/r/' + _pp.siteId + '.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ppjs, s);
+        })();
+      </script>
+  </head>
+    <body class="body-public ">
+      <div class="modal-background"></div>
+
+      <div class="webinar-modal-container modal-container vertically-align-contents">
+  <div class="webinar-modal">
+    <img class="close-modal-button x-button" src="../assets/modals/modal-close-3e859097c030cd06db8a3856942e423ece061131abd9917d5cc825326c651c81.png" />
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-4">
+        <img src="../assets/modals/cam-and-jess-375b2bfa7b9ab61413a25003a1c09862d1702874bc17a01f9f35edd8e4283397.png" />
+      </div>
+      <div class="col-xs-12 col-md-7 col-md-offset-1 vertically-align-contents">
+        <div class="inner-text">
+          <div class="small-uppercase-text"></div>
+          <div class="text-container">
+            <div class="default-modal-header">
+              Learn how to easily create your Teachable school in our live workshop
+            </div>
+            <p class="default-paragraph">In this free live workshop, learn how to setup your first course on Teachable and start teaching this week</p>
+          </div>
+          <div class="input-container">
+            <div class="spinner"></div>
+            <input type="text" placeholder="Email address" />
+            <a class="orange-button register-button">Register</a>
+            <div class="thank-you">
+              <div class="default-modal-header">
+                Thank you!
+              </div>
+              <p class="default-paragraph">You have registered for the webinar.</p>
+              <a class="orange-button close-modal-button">OK</a>
+            </div>
+            <div class="duplicate">
+              You have already registered for this webinar.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="exit-intent-modal-container modal-container vertically-align-contents">
+  <div class="exit-intent-modal">
+    <button type="button" class="close close-modal-button">
+      &times;
+    </button>
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-4">
+        <img src="../assets/modals/ebook-cover-mockup-894ef52e921f90e1357f4acef975a1f7e472dd9750295803df50dbc2e8654a46.png" />
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <h1>Get Our Course Creation Book</h1>
+        <p>Learn how to create content for videos, slides, interviews & more to build your own online course!</p>
+        <input type="text" placeholder="Email Address" />
+        <button class="download-button" type="button" name="button">Download now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <section class="_167 clearfix transparent nav-menu">
+  <style>
+    
+    ._167 {
+      margin-bottom: 0px; 
+    }
+  @media (max-width: 991px) {
+    ._167 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._167 {
+      margin-bottom: 0px; 
+    }
+  }
+  </style>
+  <div class="container">
+    <div class="row">
+      <a class="create-course" href="../create-account.html">Create a course</a>
+      <a class="teachable-logo" href="../index.html" title="Teachable - Create a Course"></a>
+      <a class="log-in" href="../login.html">Log in</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-collapse collapse">
+        <ul>
+          <li class="dropdown-only"><a href='../create-account.html'>Create Account</a></li>
+          <li class="dropdown-only"><a href='../login.html'>Log In</a></li>
+          <li><a href='../features.html'>Features</a></li>
+          <li><a href='../pricing.html'>Pricing</a></li>
+          <li><a href='../examples.html'>Examples</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href='http://blog.teachable.com/'>Blog</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href='../summit9294.html?utm_source=nav'>Summit</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="hero _168">
+  <style>
+    ._168 {
+      margin-bottom: 0px; 
+    }
+  @media (max-width: 991px) {
+    ._168 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._168 {
+      margin-bottom: 0px; 
+    }
+  }
+    ._168 h1 {
+      max-width: none;
+    }
+    ._168 h2 {
+      max-width: none;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    @media (max-width: 767px) {
+      ._168 .hero-div {
+        min-height: 437px;
+      }
+    }
+    @media (min-width: 768px) {
+      ._168 .hero-div, ._168 .container, ._168 .row, ._168 .col-xs-12 {
+        min-height: 415px;
+      }
+      ._168 .container {
+        padding-top: 85px;
+      }
+    }
+  </style>
+  <div class="hero-div" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/GZ4fa2XgQCRkjaadlLLg);">
+    <div class="container hero-container">
+      <div class="row">
+        <div class="col-xs-12 vertically-align-contents-except-xs">
+          <div class="hero-text hero-text-center">
+            <h1>Compare all four of our plans in one place</h1>
+            <h2>Everything you need to know about Teachable plans</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="pricing-comparison _169">
+  <div class="container hidden-xs">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Free</th>
+          <th>Basic</th>
+          <th>Professional</th>
+          <th>High Volume</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="subheader">
+          <td>Transaction fees</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Free courses</td>
+          <td>0%</td>
+          <td>0%</td>
+          <td>0%</td>
+          <td>0%</td>
+        </tr>
+        <tr>
+          <td>Paid courses</td>
+          <td>$1 + 10%</td>
+          <td>5%</td>
+          <td>0%<img data-toggle="tooltip" class="question" src="../assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg" data-original-title="When utilizing custom gateways for Paypal and Stripe. If you do not utilize custom gateways, Teachable charges 2%" /></td>
+          <td>0%<img data-toggle="tooltip" class="question" src="../assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg" data-original-title="No limits" /></td>
+        </tr>
+        <tr>
+          <td>Processing fees</td>
+          <td>2.9% + 30¢</td>
+          <td>2.9% + 30¢</td>
+          <td>2.9% + 30¢<img data-toggle="tooltip" class="question" src="../assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg" data-original-title="Negotiate rate with Stripe and PayPal" /></td>
+          <td>2.9% + 30¢<img data-toggle="tooltip" class="question" src="../assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg" data-original-title="Negotiate rate with Stripe and PayPal" /></td>
+        </tr>
+        <tr>
+          <td>Instant payouts<img data-toggle="tooltip" class="question" src="../assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg" data-original-title="When utilizing custom gateways for Paypal and Stripe" /></td>
+          <td>/</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Monthly payouts</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td>/</td>
+          <td>/</td>
+        </tr>
+        <tr class="subheader">
+          <td>No limits on usage</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Unlimited courses</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Unlimited students</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Unlimited video bandwidth</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Unlimited hosting</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr class="subheader">
+          <td>Support</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Product support</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Onboarding<img data-toggle="tooltip" class="question" src="../assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg" data-original-title="Two 1-hour sessions" /></td></td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td class="check"></td>
+        </tr>
+        <tr class="subheader">
+          <td>Features</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Integrated payment processing</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Student management & email</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Discussion forums</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Basic quizzes</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Graded quizzes</td>
+          <td>/</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Custom domain</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Coupon codes</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Integrated affiliate program</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Integrated email marketing</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Third-party integrations</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Drip course content</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Advanced developer customization<img data-toggle="tooltip" class="question" src="../assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg" data-original-title="Use our Power Editor to create custom designs" /></td>
+          <td>/</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Advanced reports<img data-toggle="tooltip" class="question" src="../assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg" data-original-title="On courses, videos and students" /></td>
+          <td>/</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Unbranded website</td>
+          <td>/</td>
+          <td>/</td>
+          <td class="check"></td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Bulk import students</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Bulk enroll students</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td class="check"></td>
+        </tr>
+        <tr>
+          <td>Owners / authors<img data-toggle="tooltip" class="question" src="../assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg" data-original-title="The total number of users who can serve as an owner or author for your school" /></td>
+          <td>1</td>
+          <td>2</td>
+          <td>5</td>
+          <td>25</td>
+        </tr>
+        <tr class="buttons">
+          <td></td>
+          <td><a class="green-button small-button" href="../create-account.html">Choose plan</a></td>
+          <td><a class="green-button small-button" href="../create-account491e.html?plan_id=10">Choose plan</a></td>
+          <td><a class="orange-button small-button" href="../create-account0bfb.html?plan_id=3">Choose plan</a></td>
+          <td><a class="green-button small-button" href="../create-account5d55.html?plan_id=5">Choose plan</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container-fluid hidden-xl hidden-lg hidden-md hidden-sm">
+  <div id="pricing-comparison-mobile" class="mobile-view">
+    <div class="row">
+      <ul id="pricing-comparison-plan-options" class="plan-options">
+        <li class="vertically-align-contents"><a>Free</a></li>
+        <li class="vertically-align-contents"><a>Basic</a></li>
+        <li class="active vertically-align-contents"><a>Pro</a></li>
+        <li class="vertically-align-contents"><a>High Volume</a></li>
+      </ul>
+
+      <div class="categories">
+        <div id="transaction-fees" class="category-header vertically-align-contents inactive">
+          <h3>Transaction fees</h3>
+          <div class="right-circle">
+            <img src="../assets/plus-81f9282fde92b156dd73a3e8c3d0c56c864a12b4a9891db89659c4218ebf53f7.svg"/>
+            <img src="../assets/plus-filled-a03e6532d2fb165d2656d632d1074b8f1c8658d6ee769c9c7f3be0a02b7a3fd9.svg"/>
+            <img src="../assets/minus-filled-242abc33aa3602a23126e6deabb954dbb5b2b8d8f4c1c6652555c41c00aa5b9f.svg"/>
+          </div>
+        </div>
+
+        <div id="transaction-fees-free" class="hidden category-info">
+          <div>
+            <h4>Free courses</h4>
+            <h4>0%</h4>
+          </div>
+          <div>
+            <h4>Paid courses</h4>
+            <h4>$1 + 10%</h4>
+          </div>
+          <div>
+            <h4>Processing fees</h4>
+            <h4>2.9% + 30¢</h4>
+          </div>
+          <div>
+            <h4>Instant payouts</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Monthly payouts</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+        </div>
+
+        <div id="transaction-fees-basic" class="hidden category-info">
+          <div>
+            <h4>Free courses</h4>
+            <h4>0%</h4>
+          </div>
+          <div>
+            <h4>Paid courses</h4>
+            <h4>5%</h4>
+          </div>
+          <div>
+            <h4>Processing fees</h4>
+            <h4>2.9% + 30¢</h4>
+          </div>
+          <div>
+            <h4>Instant payouts</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Monthly payouts</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+        </div>
+
+        <div id="transaction-fees-pro" class="hidden category-info">
+          <div>
+            <h4>Free courses</h4>
+            <h4>0%</h4>
+          </div>
+          <div>
+            <h4>Paid courses</h4>
+            <h4>0%</h4>
+          </div>
+          <div>
+            <h4>Processing fees</h4>
+            <h4>2.9% + 30¢</h4>
+          </div>
+          <div>
+            <h4>Instant payouts</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Monthly payouts</h4>
+            <h4>/</h4>
+          </div>
+        </div>
+
+        <div id="transaction-fees-high-volume" class="hidden category-info">
+          <div>
+            <h4>Free courses</h4>
+            <h4>0%</h4>
+          </div>
+          <div>
+            <h4>Paid courses</h4>
+            <h4>0%</h4>
+          </div>
+          <div>
+            <h4>Processing fees</h4>
+            <h4>2.9% + 30¢</h4>
+          </div>
+          <div>
+            <h4>Instant payouts</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Monthly payouts</h4>
+            <h4>/</h4>
+          </div>
+        </div>
+
+        <div id="usage-limit" class="category-header vertically-align-contents inactive">
+          <h3>No limits on usage</h3>
+          <div class="right-circle">
+            <img src="../assets/plus-81f9282fde92b156dd73a3e8c3d0c56c864a12b4a9891db89659c4218ebf53f7.svg"/>
+            <img src="../assets/plus-filled-a03e6532d2fb165d2656d632d1074b8f1c8658d6ee769c9c7f3be0a02b7a3fd9.svg"/>
+            <img src="../assets/minus-filled-242abc33aa3602a23126e6deabb954dbb5b2b8d8f4c1c6652555c41c00aa5b9f.svg"/>
+          </div>
+        </div>
+
+        <div id="usage-limit-free" class="hidden category-info">
+          <div>
+            <h4>Unlimited courses</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited students</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited video bandwidth</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited hosting</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+        </div>
+
+        <div id="usage-limit-basic" class="hidden category-info">
+          <div>
+            <h4>Unlimited courses</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited students</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited video bandwidth</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited hosting</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+        </div>
+
+        <div id="usage-limit-pro" class="hidden category-info">
+          <div>
+            <h4>Unlimited courses</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited students</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited video bandwidth</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited hosting</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+        </div>
+
+        <div id="usage-limit-high-volume" class="hidden category-info">
+          <div>
+            <h4>Unlimited courses</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited students</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited video bandwidth</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unlimited hosting</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+        </div>
+
+        <div id="support" class="category-header vertically-align-contents inactive">
+          <h3>Support</h3>
+          <div class="right-circle">
+            <img src="../assets/plus-81f9282fde92b156dd73a3e8c3d0c56c864a12b4a9891db89659c4218ebf53f7.svg"/>
+            <img src="../assets/plus-filled-a03e6532d2fb165d2656d632d1074b8f1c8658d6ee769c9c7f3be0a02b7a3fd9.svg"/>
+            <img src="../assets/minus-filled-242abc33aa3602a23126e6deabb954dbb5b2b8d8f4c1c6652555c41c00aa5b9f.svg"/>
+          </div>
+        </div>
+
+        <div id="support-free" class="hidden category-info">
+          <div>
+            <h4>Product support</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Onboarding</h4>
+            <h4>/</h4>
+          </div>
+        </div>
+
+        <div id="support-basic" class="hidden category-info">
+          <div>
+            <h4>Product support</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Onboarding</h4>
+            <h4>/</h4>
+          </div>
+        </div>
+
+        <div id="support-pro" class="hidden category-info">
+          <div>
+            <h4>Product support</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Onboarding</h4>
+            <h4>/</h4>
+          </div>
+        </div>
+
+        <div id="support-high-volume" class="hidden category-info">
+          <div>
+            <h4>Product support</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Onboarding</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+        </div>
+
+        <div id="features" class="category-header vertically-align-contents inactive">
+          <h3>Features</h3>
+          <div class="right-circle">
+            <img src="../assets/plus-81f9282fde92b156dd73a3e8c3d0c56c864a12b4a9891db89659c4218ebf53f7.svg"/>
+            <img src="../assets/plus-filled-a03e6532d2fb165d2656d632d1074b8f1c8658d6ee769c9c7f3be0a02b7a3fd9.svg"/>
+            <img src="../assets/minus-filled-242abc33aa3602a23126e6deabb954dbb5b2b8d8f4c1c6652555c41c00aa5b9f.svg"/>
+          </div>
+        </div>
+
+        <div id="features-free" class="hidden category-info">
+          <div>
+            <h4>Integraded payment processing</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Student management & email</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Discussion forums</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Basic quizzes</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Graded quizzes</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Custom domain</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Coupon codes</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Integrated affiliate program</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Integrated email marketing</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Third-party integrations</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Drip course content</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Advanced developer customization</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Advanced reports</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Unbranded website</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Bulk import students</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Bulk enroll students</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Owners / authors</h4>
+            <h4>1</h4>
+          </div>
+        </div>
+
+        <div id="features-basic" class="hidden category-info">
+          <div>
+            <h4>Integraded payment processing</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Student management & email</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Discussion forums</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Basic quizzes</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Graded quizzes</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Custom domain</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Coupon codes</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Integrated affiliate program</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Integrated email marketing</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Third-party integrations</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Drip course content</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Advanced developer customization</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Advanced reports</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Unbranded website</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Bulk import students</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Bulk enroll students</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Owners / authors</h4>
+            <h4>2</h4>
+          </div>
+        </div>
+
+        <div id="features-pro" class="hidden category-info">
+          <div>
+            <h4>Integraded payment processing</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Student management & email</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Discussion forums</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Basic quizzes</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Graded quizzes</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Custom domain</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Coupon codes</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Integrated affiliate program</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Integrated email marketing</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Third-party integrations</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Drip course content</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Advanced developer customization</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Advanced reports</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unbranded website</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Bulk import students</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Bulk enroll students</h4>
+            <h4>/</h4>
+          </div>
+          <div>
+            <h4>Owners / authors</h4>
+            <h4>5</h4>
+          </div>
+        </div>
+
+        <div id="features-high-volume" class="hidden category-info">
+          <div>
+            <h4>Integraded payment processing</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Student management & email</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Discussion forums</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Basic quizzes</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Graded quizzes</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Custom domain</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Coupon codes</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Integrated affiliate program</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Integrated email marketing</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Third-party integrations</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Drip course content</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Advanced developer customization</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Advanced reports</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Unbranded website</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Bulk import students</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Bulk enroll students</h4>
+            <h4>
+              <img src="../assets/green-checkmark-657cceff47c6ce60fa56f8a4268d761ef97dd6bf9b8c7e68e82aa45aab4637bf.svg"/>
+            </h4>
+          </div>
+          <div>
+            <h4>Owners / authors</h4>
+            <h4>25</h4>
+          </div>
+        </div>
+      </div>
+
+      <a id="mobile-pricing-comparison-table-register"class="orange-button">Choose plan</a>
+    </div>
+  </div>
+</div>
+
+</section>
+
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2 first-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Product</h4>
+          <li>
+            <a href="../examples.html">Examples</a>
+          </li>
+          <li>
+            <a href="../features.html">Features</a>
+          </li>
+          <li>
+            <a href="../pricing.html">Pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 second-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Learn</h4>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://teachable.zendesk.com/hc/en-us">Knowledge Base</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="http://blog.teachable.com/">Blog</a>
+          </li>
+          <li>
+            <a href="../enterprise.html">Enterprise</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 third-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Company</h4>
+          <li>
+            <a href="../careers.html">Careers</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="http://changelog.teachable.com/">Product updates</a>
+          </li>
+          <li>
+            <a href="../affiliates.html">Become an affiliate</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="new-homepage-footer-links">
+          <h4>Legal</h4>
+          <li>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="../terms-of-use.html">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="new-homepage-footer-links">
+          <h4>Get in touch</h4>
+          <li>We're here if you need us:</li>
+          <li>
+            <a href="../cdn-cgi/l/email-protection.html#abd8dedbdbc4d9dfebdfcecac8c3cac9c7ce85c8c4c6">Contact us</a>
+          </li>
+          <li class="social-icons">
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.facebook.com/teachableHQ/">
+              <img src="../assets/footer/facebook_icon-4123fb4aef6386d557ed654543029d5964d42775cc972ce186789292243d19e7.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://twitter.com/teachable">
+              <img src="../assets/footer/twitter_icon-dfcd749e19035479055f2de4729aa45470ce648b11f56aad4534a89d83947930.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.pinterest.com/teachablehq/">
+              <img src="../assets/footer/pinterest_icon-f81e2671629b0d1716cbdce81fd1500d598c50e9d65ee3c50950dcc89bfbe827.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.instagram.com/teachable/">
+              <img src="../assets/footer/instagram_icon-1e222076e9d388360f27a800afdd9571892dd5143ff480daea7bd879c84f8005.svg" width="32px">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 new-homepage-footer-logo">
+        <a href="../index.html">
+          <img alt='' src="../assets/teachable-logo-orange-3ece80f83dd5fdb472495dd41735abbb3e685c351b2e54a84aaee8c56e9f1283.svg" class="new-homepage-footer-logo">
+        </a>
+        <span>All rights reserved Teachable&trade; 2017</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="../cdn-cgi/scripts/78d64697/cloudflare-static/email-decode.min.js"></script></body>
+
+<!-- Mirrored from teachable.com/pricing/comparison by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2017 21:15:54 GMT -->
+</html>

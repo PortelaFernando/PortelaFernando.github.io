@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from teachable.com/terms-of-use by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2017 21:15:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"438e27ebc2","applicationID":"68773785","transactionName":"IVlZFhNYCVQDRx5DAAVTRE0SXwpP","queueTime":6,"applicationTime":9,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <title>Terms of Use | Teachable</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-92347034e89ac47d292a0f372ef5d1542ab9ab80b0ea5b0f822120eb0c7f1dbd.ico" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" media="all" href="assets/application-5746b84050e5ad44e27326916a08d5af06b8b8024af04edc458f540b9e7aa887.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="UWlmeW4ZEY6LVLso6RFRnS3fwaI7sjsZVGsgGSgbl0VeRYUO8xJVrjULWS6XfROdALQwJZKeOAbQajByezjr4Q==" />
+      
+      <meta name="description" content="Our terms of use." />
+    <link rel="canonical" href="terms-of-use.html" />
+      <meta name="og:description" content="Our terms of use." />
+      <meta property="og:title" content="Terms of Use | Teachable" />
+    <meta name="og:image" content="https://cdn.filepicker.io/api/file/iLDXTdVnTL29VSjLqVwe" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:description" content="Our terms of use." />
+      <meta property="twitter:title" content="Terms of Use | Teachable" />
+    <meta name="twitter:image" content="https://cdn.filepicker.io/api/file/iLDXTdVnTL29VSjLqVwe" />
+    <script src="assets/application-f386174a3d2263d9eea7f61a48a0fbeb56c15c7509345301c4892990e1b85da0.js"></script>
+    
+      <!-- LINKEDIN (for ads) -->
+      <script type="text/javascript">
+        _linkedin_data_partner_id = "30017";
+      </script>
+      <script type="text/javascript">
+        (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "../snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+      </script>
+      <!-- OPTIMIZELY (for A/B testing) -->
+      <script src="../cdn.optimizely.com/js/2602691345.js"></script>
+      <!-- RETENTION by PROFITWELL (for dunning) -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['ProfitWellObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+        })(window,document,'script','../dna8twue3dlxq.cloudfront.net/js/profitwell.js','profitwell');
+        profitwell('auth_token', 'c73a37dec4e02a585a09bd1997ebfa57');
+      </script>
+      <!-- PINTEREST (for ads) -->
+      <script type="text/javascript">
+        !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("../s.pinimg.com/ct/core.js");
+        pintrk('load','2615747628605');
+      </script>
+      <noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2615747628605&amp;noscript=1" />
+      </noscript>
+      <!-- RIGHTMESSAGE (for personalization) -->
+      <script type="text/javascript">
+        (function(p, a, n, d, o) {
+            a = document.createElement('script');
+            a.type = 'text/javascript'; a.async = true; a.src = p;
+            n = document.getElementsByTagName('script')[0]; n.parentNode.insertBefore(a, n);
+        })('../tag.rightmessage.io/1023339.html');
+      </script>
+      <!-- SEGMENT -->
+      <script>
+        window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+        window.analytics.load("tnh8fhmjpo");
+        analytics.ready(function() {
+          ga('create', 'UA-47288176-1', 'auto', {'name': 'secondTracker'});
+          ga('secondTracker.send', 'pageview');
+        });
+      </script>
+      <!-- PEBBLE POST -->
+      <script type="text/javascript">
+        window._pp = window._pp || {};
+        _pp.siteId = 1468;
+        (function() {
+          var ppjs = document.createElement('script');
+          ppjs.type = 'text/javascript';
+          ppjs.async = true;
+          ppjs.src = ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            '//cdn.pbbl.co/r/' + _pp.siteId + '.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ppjs, s);
+        })();
+      </script>
+  </head>
+    <body class="body-public ">
+      <div class="modal-background"></div>
+
+      <div class="webinar-modal-container modal-container vertically-align-contents">
+  <div class="webinar-modal">
+    <img class="close-modal-button x-button" src="assets/modals/modal-close-3e859097c030cd06db8a3856942e423ece061131abd9917d5cc825326c651c81.png" />
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-4">
+        <img src="assets/modals/cam-and-jess-375b2bfa7b9ab61413a25003a1c09862d1702874bc17a01f9f35edd8e4283397.png" />
+      </div>
+      <div class="col-xs-12 col-md-7 col-md-offset-1 vertically-align-contents">
+        <div class="inner-text">
+          <div class="small-uppercase-text"></div>
+          <div class="text-container">
+            <div class="default-modal-header">
+              Learn how to easily create your Teachable school in our live workshop
+            </div>
+            <p class="default-paragraph">In this free live workshop, learn how to setup your first course on Teachable and start teaching this week</p>
+          </div>
+          <div class="input-container">
+            <div class="spinner"></div>
+            <input type="text" placeholder="Email address" />
+            <a class="orange-button register-button">Register</a>
+            <div class="thank-you">
+              <div class="default-modal-header">
+                Thank you!
+              </div>
+              <p class="default-paragraph">You have registered for the webinar.</p>
+              <a class="orange-button close-modal-button">OK</a>
+            </div>
+            <div class="duplicate">
+              You have already registered for this webinar.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="exit-intent-modal-container modal-container vertically-align-contents">
+  <div class="exit-intent-modal">
+    <button type="button" class="close close-modal-button">
+      &times;
+    </button>
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-4">
+        <img src="assets/modals/ebook-cover-mockup-894ef52e921f90e1357f4acef975a1f7e472dd9750295803df50dbc2e8654a46.png" />
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <h1>Get Our Course Creation Book</h1>
+        <p>Learn how to create content for videos, slides, interviews & more to build your own online course!</p>
+        <input type="text" placeholder="Email Address" />
+        <button class="download-button" type="button" name="button">Download now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <section class="_31 clearfix transparent nav-menu">
+  <style>
+    
+    ._31 {
+      margin-bottom: 0px; 
+    }
+  @media (max-width: 991px) {
+    ._31 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._31 {
+      margin-bottom: 0px; 
+    }
+  }
+  </style>
+  <div class="container">
+    <div class="row">
+      <a class="create-course" href="create-account.html">Create a course</a>
+      <a class="teachable-logo" href="index.html" title="Teachable - Create a Course"></a>
+      <a class="log-in" href="login.html">Log in</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-collapse collapse">
+        <ul>
+          <li class="dropdown-only"><a href='create-account.html'>Create Account</a></li>
+          <li class="dropdown-only"><a href='login.html'>Log In</a></li>
+          <li><a href='features.html'>Features</a></li>
+          <li><a href='pricing.html'>Pricing</a></li>
+          <li><a href='examples.html'>Examples</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href='http://blog.teachable.com/'>Blog</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href='summit9294.html?utm_source=nav'>Summit</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="hero _32">
+  <style>
+    ._32 {
+      margin-bottom: 75px; 
+    }
+  @media (max-width: 991px) {
+    ._32 {
+      margin-bottom: 75px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._32 {
+      margin-bottom: 75px; 
+    }
+  }
+    ._32 h1 {
+      max-width: none;
+    }
+    ._32 h2 {
+      max-width: none;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    @media (max-width: 767px) {
+      ._32 .hero-div {
+        min-height: 500px;
+      }
+    }
+    @media (min-width: 768px) {
+      ._32 .hero-div, ._32 .container, ._32 .row, ._32 .col-xs-12 {
+        min-height: 415px;
+      }
+      ._32 .container {
+        padding-top: 85px;
+      }
+    }
+  </style>
+  <div class="hero-div" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/iLDXTdVnTL29VSjLqVwe);">
+    <div class="container hero-container">
+      <div class="row">
+        <div class="col-xs-12 vertically-align-contents-except-xs">
+          <div class="hero-text hero-text-center">
+            <h1>Terms of Use</h1>
+            <h2>Last updated May 19, 2017</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="markdown-partial _1532">
+  <style>
+  ._1532 {
+      margin-bottom: 0px; 
+    }
+  @media (max-width: 991px) {
+    ._1532 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._1532 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._1532 {
+      width: none;
+    }
+  }
+  @media (min-width: 768px), (max-width: 991px) {
+    ._1532 {
+      width: none;
+    }
+    ._1532 .text-container {
+      width: 66%
+    }
+  }
+  @media (min-width: 992px) {
+    ._1532 {
+      width: none;
+    }
+    ._1532 .text-container {
+      width: 66%
+    }
+  }
+  </style>
+  <div class="text-container">
+    <h4><strong>PLEASE READ THIS DOCUMENT CAREFULLY.</strong></h4>
+
+<p>Teachable, Inc. (“Teachable”) provides an online course creation platform designed to deliver massive open online courses, commonly referred to as MOOCs, (the “Services”), which enables end-users (“Students”) to connect with independent instructors (the “Instructors,” collectively with Students, “you” or the “Users,” each a “User”) who provide live and pre-recorded instruction and learning services (the “Courses”) through https://teachable.com/ and subdomains, mobile applications, and other media managed by Teachable (collectively, the “Sites”).</p>
+
+<p>These Terms of Use are entered into by and between Teachable and its Users and visitors to the Sites, and together with the Privacy Policy, govern those persons’ access to the Sites, as well as any content or functionality of the Services, whether as a visitor or a User. Instructors’ access to the Sites are also governed by the <a href="instructor-policy/index.html">Instructor Policy</a>, which is incorporated into these Terms of Use. YOUR USE OF THE SITES, THE SERVICES, RELATED WEBSITES, AND/OR THE CONTENT CONTAINED THEREIN CONSTITUTES YOUR AGREEMENT TO BE BOUND BY THESE TERMS OF USE. The Sites and Services are offered to you conditioned on your acceptance of these Terms of Use and all terms, conditions, and notices contained herein. If you do not agree to these Terms of Use or the Privacy Policy , you must not access or use the Sites.</p>
+
+<p>YOU MUST BE AT LEAST 18 YEARS OLD TO USE THE SITES, OR, IF YOU ARE BETWEEN THE AGES OF 13 AND 18, YOU MUST HAVE YOUR PARENT OR GUARDIAN’S PERMISSION TO USE THE SITES AND YOU REPRESENT AND WARRANT THAT YOU HAVE OBTAINED SUCH PERMISSION. CHILDREN UNDER THE AGE OF 13 MAY NOT USE THE SITES OR REGISTER FOR AN ACCOUNT.
+<br><br></p>
+
+<h2>1. The Relationship Between Teachable, Instructors, and Students</h2>
+
+<p>Teachable provides a platform upon which Instructors may create, offer for sale, and administer Courses to Students in the context of Teachable’s online marketplace. Teachable is neither a Course provider nor an educational institution. Instructors are not employees of Teachable. Teachable is not responsible for interactions between Instructors and Students, with the exception of providing the technological means through which Instructors may broadcast and otherwise make available their Courses and, at each Instructor’s election, for processing payments through Teachable’s payment gateway as described in the Instructor Policy. Teachable is not liable for any disputes, claims, losses, injuries, or damage of any kind that may arise out of the Instructor/Student relationship, including but not limited to, any Student’s reliance upon any information provided by an Instructor at any time.</p>
+
+<p>As stated in our Privacy Policy, Teachable only provides Instructors with the following information about the Students enrolled in their Courses: (1) name, (2) email address, and (3) the Instructor’s Course in which the Student has enrolled. Teachable does not disclose any other information about Students to Instructors, and Students assume full responsibility for the disclosure and use of any other personal information the Student chooses to disclose to any Instructor or other User on the Sites, which at all times shall be subject to the terms of our Privacy Policy.
+<br><br></p>
+
+<h2>2. Code of Conduct</h2>
+
+<p>In using the Services, you must behave in a civil and respectful manner at all times. Further, you will not:</p>
+
+<ul>
+<li><p>Act in a deceptive manner by, among other things, impersonating any person;</p></li>
+<li><p>Harass or stalk any other person;</p></li>
+<li><p>Harm or exploit minors;</p></li>
+<li><p>Distribute “spam”</p></li>
+</ul>
+
+<p>Teachable has the right, but not the obligation, to monitor all conduct on and content submitted to the Services.
+<br><br></p>
+
+<h2>3. Instructor Fees and Refunds</h2>
+
+<h3>Instructor Fees</h3>
+
+<p>Teachable may charge Instructors fees to access certain features and functionalities of the Sites and the Services set to a multitiered subscription structure, described on our Pricing page (<a href="pricing/index.html">https://teachable.com/pricing/</a>). In turn, Instructors may charge Students certain fees for access to their respective Courses, and depending on how Instructors choose to process payment of those fees, Teachable may charge a transaction fee, described in our Instructor Policy. Each User shall pay all fees and charges incurred through its respective account and billed to the User at the rates in effect for the pay period in which such fees and charges are incurred, and such User is solely responsible for payment. All paid plans are set to automatically charge at the beginning of each billing period unless you submit a cancellation request to us in writing via email or through our support form. If a User provides credit or debit card information to pay for the fees, that User represents and warrants that it is authorized to supply such information and authorizes Teachable to charge that payment method on a regular basis to pay the fees as they come due. Each User shall pay all applicable taxes relating to its use of the Services and other products or services through its accounts. A User will not be allowed access to any portion of the Sites, the Services, or its content for which a prepaid fee is required unless and until Teachable receives all fees and charges payable by that User. If a User’s payment method fails or its account is past due, then Teachable may collect fees owed using other collection mechanisms, which may include charging other payment methods on file with Teachable and/or retaining collection agencies or legal counsel.</p>
+
+<h3>Instructor Refunds</h3>
+
+<h4>30 DAY REFUND POLICY</h4>
+
+<p>School owners on paid plans are entitled to a full no-questions-asked refund upon terminating within 30 days of first upgrading to a paid or higher priced plan or within 30 days of the expiration of the owner’s promotional coupon. Refund requests made more than 30 days from the date a school owner initially upgraded to a paid plan or more than 30 days after the expiration of a promotional coupon will not be granted.</p>
+
+<h4>ANNUAL PLAN REFUNDS</h4>
+
+<p>School owners on annual plans are entitled to a full refund within 30 days of first signing up for an annual plan or within 30 days of the renewal of an annual plan. After 30 days, school owners may request to have their plan suspended and reinstated at the date of their choosing. For example, if a school owner requests a plan suspension two months after first signing up for an annual plan, the owner’s account will be downgraded and the owner will be issued a coupon for the remaining 10 months that has been paid for. The coupon can be used to reinstate the paid plan at any time. The coupon will be for the same plan tier that the school owner paid for (i.e. if the original plan was an annual Professional plan, the coupon will be for a monthly Professional plan).</p>
+
+<h4>ABUSE OF THE REFUND POLICY</h4>
+
+<p>Teachable reserves the right to refuse refunds to school owners who abuse this Refund Policy. Examples of abuse include, but are not limited to, requesting refunds for multiple schools or requesting refunds in consecutive months.
+<br><br></p>
+
+<h2>4. Cancellation and Deletion</h2>
+
+<h3>Cancellation</h3>
+
+<p>If you cancel a paid plan, the cancellation will become effective at the end of the then-current billing cycle. When you cancel a paid plan, your account will revert to a Free account and Teachable may disable access to features available only to paid plan users.</p>
+
+<h3>Deletion</h3>
+
+<p>You may delete your account at any time. Accounts on the Free plan may be deleted from the Sites if they remain inactive (i.e., the user fails to log in) for a continuous period of at least six (6) months. Accounts on paid plans will remain active unless you explicitly ask us to delete it when you cancel your paid plan. Upon termination, all licenses granted by Teachable will terminate. In the event of account deletion for any reason, your course content may no longer be available. Teachable shall not be responsible for the loss of such content.
+<br><br></p>
+
+<h2>5. Instructor Payouts and Student Refunds</h2>
+
+<h3>Instructor Payouts</h3>
+
+<p>Instructors and their affiliates are paid for signups through PayPal 30 days after the end of the month in which a sale is made. This 30-day period is necessary to account for student refunds.</p>
+
+<h3>Student Refunds</h3>
+
+<p>If an Instructor uses Teachable’s payment gateway, the Instructor’s Students are entitled to a full refund within 30 days of their initial class enrollment and payment. If a Student paid by PayPal, they will be refunded via PayPal directly via the Instructor’s PayPal account; If a Student paid by credit card, they will be refunded via the credit card processor within 7 days of the Instructor submitting a refund request via Teachable.
+<br><br></p>
+
+<h2>6. Content, Licenses &amp; Permissions</h2>
+
+<h3>Content</h3>
+
+<p>The content on the Sites, including all information, software, technology, data, logos, marks, designs, text, graphics, pictures, audio and video files, other data or copyrightable materials or content, and their selection and arrangement, is referred to herein as “Content.” Content uploaded, transmitted, or posted by Users, whether they are Instructors or Students, is referred to herein as “User Content.”</p>
+
+<p>User Content is and remains that User’s property, and Teachable’s only right to that User Content is the limited licenses to it granted in these Terms of Use. The Sites, and all Content other than User Content and all software available on the Sites or used to create and operate the Sites, is and remains the property of Teachable, and is protected under the Copyright Act of 1976, as amended, and other intellectual property laws of the United States and any foreign jurisdiction where the Sites are accessed, and all rights to the Sites, such Content, and such software are expressly reserved. All trademarks and service marks, whether registered or unregistered, as well as product names and company names or logos, displayed or mentioned on the Sites are the property of their respective owners. Reference to any products, services, processes, or other information, by trade name, trademark, manufacturer, supplier, or otherwise does not constitute or imply endorsement, sponsorship, or recommendation thereof by Teachable.</p>
+
+<p>Your User Content is your responsibility. Teachable does not control or monitor User Content and, as such, does not guarantee in any manner the content, reliability, validity, accuracy, or truthfulness of such User Content, including but not limited to Content presented through the Courses. By using the Services, you may be exposed to User Content that you consider offensive, indecent, or objectionable. Teachable has no responsibility to keep such content from you and no liability for your access or use of any User Content to the extent permissible by law. Although we have no obligation to do so, we have the absolute discretion to remove, screen, or edit without notice any User Content posted or stored on the Sites, and we may do this at any time and for any reason. You are solely responsible for maintaining copies of and replacing any User Content you post or store on the Sites.</p>
+
+<h3>Teachable’s Limited License for Use of the Services</h3>
+
+<p>Teachable grants you a limited, non-exclusive license to access and use the Services for your own personal and commercial purposes. This license is personal to you and may not be assigned or sublicensed to anyone else. Except as expressly permitted by Teachable in writing, you will not reproduce, redistribute, sell, create derivative works from, decompile, reverse engineer, or disassemble the Services. Nor will you take any measures to interfere with or damage the Services. All rights not expressly granted by Teachable are reserved.</p>
+
+<h3>Your Limited License of Your User Content to Teachable</h3>
+
+<p>While Teachable does not claim any ownership interest in your User Content, we do need the right to use your User Content to the extent necessary to operate the Sites and provide the Services, now and in the future. For example, when an Instructor makes Course materials available to its Students through the Sites or a Student communicates with an Instructor on a discussion forum, Teachable needs a license from those Users to display their respective Content on the Sites, as well as the right to sublicense that User Content to our other Users so that they can view that User Content. Therefore, by posting or distributing Content to or through the Sites, each User grants to Teachable, and its affiliates and subsidiaries, a non-exclusive, royalty-free, transferable, irrevocable, worldwide license and right to use, display, publicly perform, reproduce, distribute, publish, modify, adapt, translate, create derivative works of, and otherwise use and exploit such User Content that you upload, transmit, or post on the Sites or through the Services, in the manner in and for the purposes for which the Sites from time to time uses such User Content. In doing so, the User represents and warrants that it owns and controls all of the rights to the User Content that it posts or otherwise distributes, and has the lawful right to post and distribute that User Content, to or through the Sites, and the use and posting or other transmission of such User Content does not violate these Terms of Use and will not violate any rights of or cause injury to any other person or entity.</p>
+
+<p>If your User Content is intended for the use by other Users, you also grant us and our affiliates and subsidiaries a non-exclusive, royalty-free, transferable right to sublicense such User Content to such Users for their use in connection with their use of the Sites, as described in the section titled Our Limited License of Content to Users.</p>
+
+<h3>Teachable’s Limited License of Content to Users</h3>
+
+<p>Teachable grants to Users a limited, revocable, non-exclusive, non-sublicensable license to access the Sites and to view, copy, and print the portions of the Content available to Users on the Sites. For Students, this includes access and use of the Courses and content provided therein, for which they have paid all required fees. Such license is subject to these Terms of Use, and specifically conditioned upon the following:</p>
+
+<ul>
+<li><p>Users may only view, copy, and print such portions of the Content for their own use;</p></li>
+<li><p>Users may not modify or otherwise make derivative works of the Sites or Content, or reproduce, distribute, or display the Sites or any Content (except for page caching) except as expressly permitted in these Terms of Use;</p></li>
+</ul>
+
+<p>*Users may not remove or modify any copyright, trademark, or other proprietary notices that have been placed in the Content;</p>
+
+<p>Users may not use any data mining, robots, or similar data gathering or extraction methods; and</p>
+
+<ul>
+<li>Users may not use the Sites or Content other than for their intended purposes.</li>
+</ul>
+
+<p>Except as expressly permitted above, any use of any portion of Content without the prior written permission of its owner is strictly prohibited and will terminate the license granted herein, these Terms of Use, and your access to the Sites. Any such unauthorized use may also violate applicable laws, including without limitation copyright and trademark laws. Unless explicitly stated herein, nothing in these Terms of Use may be construed as conferring any license to intellectual property rights, whether by estoppels, implication, or otherwise. Teachable may revoke this license at any time for any reason or no reason, and shall not be liable to any User for any purported interference with business or contractual relations, in tort or otherwise.</p>
+
+<p>Users represent and warrant that their use of the Sites and the Content will remain consistent with this license and will not infringe or violate the rights of any other party or breach any contract or legal duty to any other parties, or violate any applicable law. To request permission for uses of Content not included in this license, you may contact Teachable at the address set out at the bottom of these Terms of Use.</p>
+
+<h3>Use of Interactive Areas and the Sites</h3>
+
+<p>The Sites may contain discussion forums, bulletin boards, review services, or other forums in which Users or third parties may post content, messages, materials, reviews, or other items on the Sites (“Interactive Areas”). You are solely responsible for your use of such Interactive Areas and use them at your own risk. User Content submitted to any public area of the Sites is non-confidential. By using any Interactive Areas, you expressly agree not to post, upload to, transmit, distribute, store, create, or otherwise publish through the Sites any of the following:</p>
+
+<ul>
+<li><p>Any message, data, information, text, music, sound, photos, graphics, code, or other material that is unlawful, libelous, defamatory, obscene, pornographic, indecent, lewd, suggestive, harassing, threatening, invasive of privacy or publicity rights, abusive, inflammatory, or fraudulent;</p></li>
+<li><p>Content that would constitute, encourage, or provide instructions for a criminal offense, violate the rights of any party, or that would otherwise create liability or violate any applicable federal, state, or local law;</p></li>
+<li><p>Content that may infringe any patent, trademark, trade secret, copyright, or other intellectual property or proprietary right of any party;</p></li>
+<li><p>Content that impersonates any person or entity or otherwise associates, infers, or misrepresents the User’s affiliation with a person or entity;</p></li>
+<li><p>Any tool or service that imports content from any platform that prohibits such services from accessing its platform for this purpose.</p></li>
+<li><p>Unsolicited promotions, political campaigning, advertising, or solicitations;</p></li>
+<li><p>Private information of any third party, including, without limitation, addresses, phone numbers, email addresses, and credit card numbers, unless that third party has expressly consented to such use and disclosure;</p></li>
+<li><p>Viruses, corrupted data, or other harmful, disruptive, or destructive files;</p></li>
+<li><p>Content that is unrelated to the topic of the Interactive Area(s) in which such Content is posted, in Teachable’s sole determination; and</p></li>
+<li><p>Content that, in Teachable’s sole judgment, is objectionable or which restricts or inhibits any other person from using or enjoying the Interactive Areas or the Sites, or which may expose Teachable or its affiliates or Users to any harm or liability of any kind.</p></li>
+</ul>
+
+<p>Finally, Teachable has a zero-tolerance policy towards unsolicited email or messages, commonly referred to as “spam.” Users may not use the Interactive Areas or the Sites generally to send commercial or other messages to any third-party, within or outside of the Sites, if those messages are not solicited, authorized, or welcomed by the third-party, and in using the Sites, Users must comply with all applicable laws, including laws that apply in any jurisdiction, to spam and marketing practices, and with any applicable marketing association guidelines on ethical marketing practices.</p>
+
+<p>Any use of the Interactive Areas or other portions of the Sites in violation of the foregoing violates these Terms of Use and may result in, among other things, termination or suspension of your rights to use the Interactive Areas and/or the Sites. If you believe that your own User Content violates any law or regulation, is inaccurate, or poses any risk whatsoever to any third party, it is your responsibility to take any corrective steps you deem necessary. If you believe that any third party’s Content or any Teachable Content violates any laws or regulations, including, without limitation, any copyright laws, you should report it to Teachable in accordance with the procedures that we maintain under our intellectual property policies as set forth in the section titled Intellectual Property.
+<br><br></p>
+
+<h2>7. Intellectual Property</h2>
+
+<p>Users may not engage in any activity on or through the Sites, including transmitting or using User Content, that infringes or otherwise makes unauthorized use of another party’s copyright, trademark, or other intellectual property or proprietary rights. We will respond to legitimate requests made pursuant to the Online Copyright Infringement Liability Limitation Act of the Digital Millennium Copyright Act (17 U.S.C. § 512) (“DMCA”) and trademark law, and we retain the right to remove Content from the Sites that Teachable believes in good faith infringes on any third party’s intellectual property rights upon notice from the owner of such intellectual property, or their agent. Be advised that misrepresentations of infringement could result in liability for monetary damages and that Teachable reserves the right to seek damages and indemnification from any party that submits a Notice of Claimed Infringement or Counter Notification in violation of the law. Consult an attorney before taking any action pursuant to the DMCA or to enforce trademark or other intellectual property rights.</p>
+
+<p>Any Notice of Claimed Infringement and request for removal, and all Counter Notifications thereto, the requirements for which are listed below, should be sent to Teachable’s Designated Agent by physical or electronic mail at:</p>
+
+<p>Teachable, Inc.</p>
+
+<p>Attention: Designated Agent</p>
+
+<p>50 W. 17th Street, 4th Floor</p>
+
+<p>New York, New York 10011</p>
+
+<p>Email: <a href="cdn-cgi/l/email-protection.html#fc98919f9dbc88999d9f949d9e9099d29f9391"><span class="__cf_email__" data-cfemail="27434a444667534246444f46454b420944484a">[email&#160;protected]</span></a></p>
+
+<p>Please only use the above address for submitting the notices set forth in this Intellectual Property section. Any other correspondence about Teachable, the operation of the Sites, or any other matter should be sent to <a href="cdn-cgi/l/email-protection.html#21424e4f5540425561554440424940434d440f424e4c"><span class="__cf_email__" data-cfemail="42212d2c3623213602362723212a23202e276c212d2f">[email&#160;protected]</span></a>.</p>
+
+<h3>Notice of Claimed Infringement</h3>
+
+<p>If you believe in good faith that any Content has been used in a manner that infringes a copyright that you own or control, you may send a timely Notice of Claimed Infringement containing the following information:</p>
+
+<ul>
+<li><p>A physical or electronic signature of the copyright owner, or person authorized to act on its behalf;</p></li>
+<li><p>A description of the copyrighted work that you claim has been infringed upon;</p></li>
+<li><p>A description of where the material that you claim is infringing is located on the Sites, the easiest way being by providing us with the URL(s) leading directly to the allegedly infringing Content;</p></li>
+<li><p>Your mailing address, telephone number, and email address;</p></li>
+<li><p>A statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law;</p></li>
+<li><p>A statement, made under penalty of perjury, that the information contained in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner’s behalf.</p></li>
+</ul>
+
+<p>For claims of trademark infringement, send a notice to Teachable’s Designated Agent containing the preceding information as applicable to your trademark or service mark, including the mark, registration number if applicable, basis for your trademark claim, jurisdiction in which you claim trademark rights, and class of goods or services and accompanying description for which you assert trademark rights. Please note that a copy of your notice will be sent to the party who posted the Content you report.</p>
+
+<h3>Counter Notification</h3>
+
+<p>If we remove your Content in response to a Notice of Claimed Infringement, we will notify you and offer to provide you with a copy of such notice. If you believe your Content was wrongly removed due to a mistake or misidentification of the Content, you may submit a timely Counter Notification to our Designated Agent that includes the following information:</p>
+
+<ul>
+<li><p>Your physical or electronic signature;</p></li>
+<li><p>Identification of the Content that has been removed or to which access has been disabled and the location at which the Content appeared before it was removed or access to it was disabled;</p></li>
+</ul>
+
+<p>Upon receiving an effective Counter Notification, Teachable will promptly forward it to the reporting party. If the reporting party fails to notify Teachable within ten (10) business days that it has filed an action seeking a court order to restrain you from engaging in the allegedly infringing activity, Teachable will consider, in our sole discretion, restoring eligible Content to the Sites.</p>
+
+<p>Our policy is to remove any User Content posted to the Sites by any User for whom Teachable has received and acted on more than two takedown requests. Teachable has discretion, however, to terminate any User’s account and/or access to the Sites or Services after receipt of a single Notification of Claimed Infringement, or in Teachable’s in sole discretion.
+<br><br></p>
+
+<h2>8. Third Party Communications</h2>
+
+<p>Teachable disclaims all liability for any communications directed to you from any third party directly or indirectly in connection with the Sites that you may receive and any actions you may take or refrain from taking as a result of such communications. You are solely responsible for assessing and verifying the identity and trustworthiness of the source and content of any such third-party communications. Teachable assumes no responsibility for verifying, and makes no representations or warranties regarding, the identity, or trustworthiness of the source or content of any such third-party communications.</p>
+
+<h3>Links to Other Sites</h3>
+
+<p>The Sites and posted User Content may contain links to third-party websites (“Third-Party Sites”) and third-party content (“Third-Party Content”) as a service to those interested in this information. Teachable may also have relationships with third party service providers who handle certain functions for the Sites. Your use of links to Third-Party Sites and any Third-Party Content, or service provided on this Sites or a third party site, is at your own risk. Teachable does not monitor or have any control over, and makes no claim or representation regarding Third-Party Content or Third-Party Sites and accepts no responsibility for reviewing changes or updates to, or the quality, content, policies, nature or reliability of, Third-Party Content, Third-Party Sites, or websites linking to the Sites. When you leave the Sites, our terms and policies no longer govern. You should review applicable terms and policies, including privacy and data gathering practices, of any Third-Party Site, and should make whatever investigation you feel necessary or appropriate before proceeding with any transaction with any third party.
+<br><br></p>
+
+<h2>9. Registration</h2>
+
+<p>To use certain Services, including providing or accessing Courses, you will need to register and obtain a password-protected account. You agree to provide accurate and complete information when registering and at all times thereafter. You are solely responsible for maintaining the confidentiality of your account, username, and password, and for all activities associated therewith. Please contact us at <a href="cdn-cgi/l/email-protection.html#9ffcf0f1ebfefcebdfebfafefcf7fefdf3fab1fcf0f2"><span class="__cf_email__" data-cfemail="32515d5c4653514672465753515a53505e571c515d5f">[email&#160;protected]</span></a> if you suspect your account was compromised or was used without your permission, and promptly take steps to secure your account. To the extent permissible under applicable law, Teachable will not be responsible for any loss or damage arising from your failure to comply with the foregoing requirements or as a result of use or misuse of your account, either with or without your knowledge. In cases where you have authorized or registered another individual, including minor children under the age of 18, to use your account, you are fully responsible for the online conduct of such person, controlling that person’s access to and use of the Sites and Services, and the consequences of any misuse by that person.
+<br><br></p>
+
+<h2>10. Errors and Corrections</h2>
+
+<p>Teachable does not represent or warrant that the Sites, Services, or Courses will be error-free or otherwise reliable, free of viruses, or other harmful components, or that defects will be corrected or that they will always be accessible. Teachable may make improvements and/or changes to the Sites and their features and functionality at any time, and will use commercially reasonable efforts to avoid disrupting peak hours, though some downtime may occur. Please contact individual Instructors directly to report errors in their respective Course content.
+<br><br></p>
+
+<h2>11. Assumption of Risk</h2>
+
+<p>You are solely responsible for ensuring that your use of the Sites complies with applicable law and does not violate the rights of any third party, including, without limitation, intellectual property rights. You assume all liability for any claims, suits or grievances filed against you, including, but not limited to, all damages related to your use of the Sites.
+<br><br></p>
+
+<h2>DISCLAIMER</h2>
+
+<p>THE SITES, SERVICES, COURSES, AND CONTENT ARE PROVIDED ON AN “AS IS, AS AVAILABLE” BASIS. TEACHABLE EXPRESSLY DISCLAIMS ALL WARRANTIES, INCLUDING THE WARRANTIES OF MERCHANTABILITY, TITLE, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. TEACHABLE HAS NO OBLIGATION TO SCREEN OR MONITOR ANY CONTENT AND DOES NOT GUARANTEE THAT ANY CONTENT AVAILABLE ON THE SITES COMPLIES WITH THESE TERMS OF USE OR IS SUITABLE FOR ALL USERS. TEACHABLE DISCLAIMS ALL RESPONSIBILITY FOR ANY LOSS, INJURY, CLAIM, LIABILITY, AND/OR DAMAGE OF ANY KIND RESULTING FROM, ARISING OUT OF, OR IN ANY WAY RELATED TO (A) ANY ERRORS IN OR OMISSIONS FROM THE SITES, SERVICES, OR COURSES INCLUDING, BUT NOT LIMITED TO, TECHNICAL FUNCTIONALITY OR INACCURACIES; (B) THIRD PARTY COMMUNICATIONS; (C) ANY THIRD PARTY CONTENT THEREIN DIRECTLY OR INDIRECTLY ACCESSED THROUGH LINKS ON THE SITES, INCLUDING BUT NOT LIMITED TO ANY ERRORS IN OR OMISSIONS THEREFROM; (D) THE UNAVAILABILITY OF THE SITES, SERVICES, COURSES, OR ANY PORTION THEREOF; (E) YOUR USE OF THE SITES; AND (F) YOUR USE OF ANY EQUIPMENT OR SOFTWARE IN CONNECTION WITH THE SITES.
+<br><br></p>
+
+<h2>LIMITATION OF LIABILITY</h2>
+
+<p>TO THE MAXIMUM EXTENT ALLOWED UNDER APPLICABLE LAW, TEACHABLE, ITS PRESENT AND FUTURE OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, LICENSORS, SUPPLIERS, AND ANY THIRD PARTY INFORMATION PROVIDERS TO THE SITES, SHALL NOT BE LIABLE FOR ANY LOSS, INJURY, CLAIM, LIABILITY, OR DAMAGE OF ANY KIND RESULTING FROM YOUR USE OF THE SITES, THE SERVICES, THE COURSES, ANY FACTS OR OPINIONS APPEARING THEREIN, THE CONTENT, OR ON OR THROUGH ANY THIRD-PARTY COMMUNICATIONS. TO THE MAXIMUM EXTENT ALLOWED UNDER APPLICABLE LAW, TEACHABLE SHALL NOT BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES OF ANY KIND WHATSOEVER IN ANY WAY DUE TO, RESULTING FROM, OR ARISING IN CONNECTION WITH THE USE OF OR INABILITY TO USE OR ACCESS THE SITES, THE SERVICES, THE COURSES, THE CONTENT, OR ANY THIRD-PARTY COMMUNICATIONS. TO THE MAXIMUM EXTENT ALLOWED UNDER APPLICABLE LAW, TEACHABLE SHALL NOT BE LIABLE TO ANY PARTY FOR CLAIMS ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE SITES, THE SERVICES, OR THE COURSES, INCLUDING, WITHOUT LIMITATION, CLAIMS FOR COPYRIGHT INFRINGEMENT. TO THE EXTENT THE FOREGOING LIMITATION OF LIABILITY IS PROHIBITED OR FAILS OF ITS ESSENTIAL PURPOSE, TEACHABLE’S SOLE OBLIGATION TO YOU FOR DAMAGES SHALL NOT EXCEED THE AMOUNTS PAID BY YOU TO TEACHABLE OVER THE TWELVE (12) MONTHS PRECEDING YOUR CLAIM(S), UNLESS OTHERWISE REQUIRED BY APPLICABLE LAW.
+<br><br></p>
+
+<h2>12. Indemnification</h2>
+
+<p>You agree to indemnify, defend, and hold harmless Teachable, its present and future officers, directors, employees, agents, licensors, suppliers, and any third party information providers to the Sites from and against all claims, losses, expenses, damages and costs, including reasonable attorneys’ fees, resulting from any violation of these Terms of Use by you or arising from or related to your use or misuse of the Sites (including, without limitation, use in contravention of these Terms of Use, other Teachable policies, and copyright and other intellectual property law).
+<br><br></p>
+
+<h2>13. Third Party Rights</h2>
+
+<p>The sections titled Disclaimer, Limitation of Liability, and Indemnification are solely for the benefit of Teachable and its present and future officers, directors, employees, agents, licensors, suppliers, and any third-party providers to the Sites. Each of these individuals or entities shall have the right to assert and enforce those provisions directly against you on their own behalf. You may not assign your rights under these Terms of Use without Teachable&#39;s prior written consent.
+<br><br></p>
+
+<h2>14. Unlawful Activity; Termination of Access</h2>
+
+<p>Teachable reserves the right to investigate complaints or reported violations of these Terms of Use and to take any action it deems appropriate, including but not limited to, reporting any suspected unlawful activity to law enforcement officials, regulators, or other third parties, and disclosing any information necessary or appropriate to such persons or entities relating to Users, User accounts, email addresses, usage history, posted materials, IP addresses, and web traffic information. Teachable may discontinue any User or visitor’s participation in the Sites and Services at any time for any reason or no reason. When Teachable terminates a User’s account, that User’s Content will, shortly thereafter, not appear on the Sites, except for User Content submitted to our forum or comments on our blog, which may remain on the Sites after termination. We may also retain an archival copy of your User Content after termination, and you hereby grant us a non-exclusive, perpetual, irrevocable license to maintain such archival copy for our internal business purposes.
+<br><br></p>
+
+<h2>15. Remedies for Violations</h2>
+
+<p>Teachable reserves the right to seek all remedies available at law and in equity for violations of these Terms of Use, including but not limited to the right to block access from a particular IP address or other user identifier to the Sites.
+<br><br></p>
+
+<h2>16. Communications</h2>
+
+<p>Teachable may notify Users of relevant information regarding the Sites and Services in any of the following ways: (a) by emailing Users at the contact information they provide in their account registration, (b) by posting a notice in dashboard areas of the Sites, and (c) by posting the notice elsewhere on the Sites in an area suitable to the notice. It is each User’s responsibility to periodically review the Sites for such notices.</p>
+
+<p>Subject to the Privacy Policy, if you send to Teachable or post on the Sites in any public area any information, ideas, inventions, concepts, techniques, or know-how (“User Submissions”), for any purpose, including the developing, manufacturing, and/or marketing or products or services incorporating such information, you acknowledge that Teachable can use such User Submissions without acknowledgement or compensation to you, and you waive any claim of ownership or compensation or other rights you may have in relation to your User Submissions. We actively review User Submissions for new ideas. If you wish to preserve any interest you might have in your User Submissions, you should not post them to the Sites or send them to us.
+<br><br></p>
+
+<h2>17. Governing Law and Jurisdiction; Disputes and Arbitration</h2>
+
+<p>These Terms of Use are governed by and construed in accordance with the internal law of the State of New York without regard to its principles of conflicts of laws. Any action arising out of or relating to these Terms of Use shall be filed only in the state or federal courts located in the County of New York in the State of New York, and you hereby consent and submit to the exclusive personal jurisdiction of such courts for the purpose of litigating any such action.</p>
+
+<p>Any dispute, controversy, proceeding, or claim arising out of or in connection with or relating to these Terms of Use, any of Teachable’s policies, or the Sites and/or Services, in each case, whether in contract, tort, common or statutory law, equity or otherwise (collectively, a “Dispute”) shall be resolved by binding confidential arbitration by JAMS pursuant to its Optional Expedited Arbitration Procedures then in effect for JAMS, except as provided herein. The arbitration will be conducted in New York County, New York, unless you and Teachable agree otherwise. Any judgment on the award rendered by the arbitrator may be entered in any court of competent jurisdiction. Nothing in this section shall be deemed as preventing Teachable from seeking injunctive or other equitable relief from the courts as necessary to prevent the actual or threatened infringement, misappropriation, dilution, or violation of our data security, intellectual property rights, or other proprietary rights.</p>
+
+<p>YOU AND TEACHABLE EACH AGREE TO WAIVE ITS RIGHT TO TRIAL BY JURY AND THAT ANY PROCEEDINGS TO RESOLVE OR LITIGATE ANY DISPUTE ARISING HEREUNDER WILL BE CONDUCTED SOLELY ON AN INDIVIDUAL BASIS, AND THAT YOU WILL NOT SEEK TO HAVE ANY DISPUTE HEARD AS A CLASS ACTION, A REPRESENTATIVE ACTION, A COLLECTIVE ACTION, A PRIVATE ATTORNEY-GENERAL ACTION, OR IN ANY PROCEEDING IN WHICH YOU ACT OR PROPOSE TO ACT IN A REPRESENTATIVE CAPACITY. YOU FURTHER AGREE THAT NO PROCEEDING WILL BE JOINED, CONSOLIDATED, OR COMBINED WITH ANOTHER PROCEEDING WITHOUT THE PRIOR WRITTEN CONSENT OF TEACHABLE AND ALL PARTIES TO ANY SUCH PROCEEDING.
+<br><br></p>
+
+<h2>18. California Civil Code Section 1789.3 Compliance</h2>
+
+<p>Pursuant to California Civil Code Section 1789.3, any questions about pricing, complaints, or inquiries about Teachable must be addressed to our agent for notice and sent via certified mail to that agent. For our agent’s most current contact information, please send a request to <a href="cdn-cgi/l/email-protection.html#e2818d8c96838196a2968783818a83808e87cc818d8f"><span class="__cf_email__" data-cfemail="62010d0c1603011622160703010a03000e074c010d0f">[email&#160;protected]</span></a>.</p>
+
+<p>California websites users are entitled to the following specific consumer rights notice: The Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs may be contacted in writing at 400 R Street, Suite 1080, Sacramento, California, 95814, or by telephone at (916) 445-1254 or (800) 952-5210.
+<br><br></p>
+
+<h2>19. Privacy</h2>
+
+<p>Your use of the Sites is subject to our Privacy Policy.
+<br><br></p>
+
+<h2>20. Entire Agreement; Severability of Provisions; No Waiver</h2>
+
+<p>These Terms of Use incorporate by reference any notices contained on the Sites, including within the Privacy Policy, and constitute the entire agreement with respect to access to and use of the Sites, Services, Courses, and Content. If any provision of these Terms of Use is deemed unlawful, void, or unenforceable by a court of law exercising proper jurisdiction, that provision shall be deemed severed from the remaining provisions and shall not affect their validity and enforceability. No waiver of any provision hereof shall be valid unless in writing signed by the parties. Any failure to enforce any right or remedy hereunder shall not operate as a waiver of the right to enforce such right or remedy in the future or of any other right or remedy.
+<br><br></p>
+
+<h2>21. Changes to the Terms of Use</h2>
+
+<p>Be advised that Teachable may review and update these Terms of Use at any time in our sole discretion and it is each User’s responsibility to keep abreast of those changes. All changes are effective immediately when posted. As such, your continued use of the Sites after Teachable makes changes to these Terms of Use is deemed to be acceptance of those changes, so please check this webpage periodically for updates.
+<br><br></p>
+
+<h2>22. Contact Us</h2>
+
+<p>If you have questions or concerns regarding these Terms of Use, the Sites, or the Services, you may contact us at:</p>
+
+<p>Teachable, Inc.<br/>50 W. 17th Street, 4th Floor<br/>New York, New York 10011<br/>Email: <a href="cdn-cgi/l/email-protection.html#99faf6f7edf8faedd9edfcf8faf1f8fbf5fcb7faf6f4"><span class="__cf_email__" data-cfemail="3e5d51504a5f5d4a7e4a5b5f5d565f5c525b105d5153">[email&#160;protected]</span></a></p>
+
+  </div>
+</section>
+
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2 first-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Product</h4>
+          <li>
+            <a href="examples.html">Examples</a>
+          </li>
+          <li>
+            <a href="features.html">Features</a>
+          </li>
+          <li>
+            <a href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 second-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Learn</h4>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://teachable.zendesk.com/hc/en-us">Knowledge Base</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="http://blog.teachable.com/">Blog</a>
+          </li>
+          <li>
+            <a href="enterprise.html">Enterprise</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 third-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Company</h4>
+          <li>
+            <a href="careers.html">Careers</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="http://changelog.teachable.com/">Product updates</a>
+          </li>
+          <li>
+            <a href="affiliates.html">Become an affiliate</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="new-homepage-footer-links">
+          <h4>Legal</h4>
+          <li>
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="terms-of-use.html">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="new-homepage-footer-links">
+          <h4>Get in touch</h4>
+          <li>We're here if you need us:</li>
+          <li>
+            <a href="cdn-cgi/l/email-protection.html#fe8d8b8e8e918c8abe8a9b9f9d969f9c929bd09d9193">Contact us</a>
+          </li>
+          <li class="social-icons">
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.facebook.com/teachableHQ/">
+              <img src="assets/footer/facebook_icon-4123fb4aef6386d557ed654543029d5964d42775cc972ce186789292243d19e7.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://twitter.com/teachable">
+              <img src="assets/footer/twitter_icon-dfcd749e19035479055f2de4729aa45470ce648b11f56aad4534a89d83947930.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.pinterest.com/teachablehq/">
+              <img src="assets/footer/pinterest_icon-f81e2671629b0d1716cbdce81fd1500d598c50e9d65ee3c50950dcc89bfbe827.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.instagram.com/teachable/">
+              <img src="assets/footer/instagram_icon-1e222076e9d388360f27a800afdd9571892dd5143ff480daea7bd879c84f8005.svg" width="32px">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 new-homepage-footer-logo">
+        <a href="index.html">
+          <img alt='' src="assets/teachable-logo-orange-3ece80f83dd5fdb472495dd41735abbb3e685c351b2e54a84aaee8c56e9f1283.svg" class="new-homepage-footer-logo">
+        </a>
+        <span>All rights reserved Teachable&trade; 2017</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="cdn-cgi/scripts/78d64697/cloudflare-static/email-decode.min.js"></script></body>
+
+<!-- Mirrored from teachable.com/terms-of-use by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2017 21:15:28 GMT -->
+</html>

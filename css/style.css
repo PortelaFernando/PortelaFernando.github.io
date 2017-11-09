@@ -196,6 +196,23 @@ h3 {
   height: 83%;
 }
 
+.fluidMedia10 {
+  position: absolute;
+  padding-bottom: 56.25%;
+  padding-top: 2px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.fluidMedia10 iframe {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 p {
   margin: 0 0 20px;
@@ -269,6 +286,10 @@ label[for*='9']:before {
   content: '\f1c3';
 }
 
+label[for*='10']:before {
+  content: '\f25e';
+}
+
 label:hover {
   color: #888;
   cursor: pointer;
@@ -289,7 +310,8 @@ input:checked + label {
 #tab6:checked ~ #content6,
 #tab7:checked ~ #content7,
 #tab8:checked ~ #content8,
-#tab9:checked ~ #content9 {
+#tab9:checked ~ #content9,
+#tab10:checked ~ #content10 {
   display: block;
 }
 

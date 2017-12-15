@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mail">
+            <circle id="Oval-9" fill="#FFFFFF" cx="150" cy="150" r="150"></circle>
+            <g id="Group-2" transform="translate(87.000000, 106.000000)">
+                <rect id="Rectangle" fill="#FF7F45" x="0.906498212" y="0.491188392" width="124.187004" height="87.3526042" rx="10"></rect>
+                <g id="Group" transform="translate(14.000000, 16.000000)" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline id="Path-7" points="0.679142822 0.150893661 49.2936316 46.5430549 97.9081204 0.150893661"></polyline>
+                    <path d="M27.9242312,27.4681236 L8.27203309,50.989354" id="Path-8"></path>
+                    <path d="M88.9242312,27.4681236 L69.2720331,50.989354" id="Path-8-Copy" transform="translate(79.098132, 39.228739) scale(-1, 1) translate(-79.098132, -39.228739) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

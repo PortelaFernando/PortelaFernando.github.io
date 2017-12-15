@@ -18,6 +18,10 @@ body {
   overflow: hidden;
 }
 
+.pluginblock{position:absolute;height:auto;text-align:left;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row;flex-flow:row;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
+
+.pluginblock{border-radius:3px;background-color:#f5f9fd;box-shadow:0 5px 27px rgba(20,67,108,.31);padding:15px;bottom:10px;right:10px;-webkit-animation:appear2 1s 0s 1 ease-in-out;animation:appear2 1s 0s 1 ease-in-out;cursor:default;-webkit-user-select:initial;-moz-user-select:initial;-ms-user-select:initial;user-select:auto;text-align:center}
+
 h1 {
   padding: 16px 0;
   font-weight: 400;
@@ -45,7 +49,7 @@ h3 {
   top: -85px; 
   left: 0;
   width: 100%;
-  height: 92%;
+  height: 100%;
 }
 
 .fluidMedia2 {
@@ -84,6 +88,24 @@ h3 {
   height: 100%;
 }
 
+.fluidMedia8 {
+  position: absolute;
+  padding-bottom: 56.25%;
+  padding-top: 2px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.fluidMedia8 iframe {
+  position: absolute;
+  top: 0px; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .fluidMedia6 {
   position: absolute;
   padding-bottom: 56.25%;
@@ -96,7 +118,7 @@ h3 {
 
 .fluidMedia6 iframe {
   position: absolute;
-  top: -55px; 
+  top: 0; 
   left: 0;
   width: 100%;
   height: 100%;
@@ -156,6 +178,41 @@ h3 {
   height: 100%;
 }
 
+.fluidMedia9 {
+  position: absolute;
+  padding-bottom: 56.25%;
+  padding-top: 2px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.fluidMedia9 iframe {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 83%;
+}
+
+.fluidMedia10 {
+  position: absolute;
+  padding-bottom: 56.25%;
+  padding-top: 2px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.fluidMedia10 iframe {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 p {
   margin: 0 0 20px;
@@ -221,6 +278,18 @@ label[for*='7']:before {
   content: '\f038';
 }
 
+label[for*='8']:before {
+  content: '\f167';
+}
+
+label[for*='9']:before {
+  content: '\f1c3';
+}
+
+label[for*='10']:before {
+  content: '\f25e';
+}
+
 label:hover {
   color: #888;
   cursor: pointer;
@@ -239,7 +308,10 @@ input:checked + label {
 #tab4:checked ~ #content4,
 #tab5:checked ~ #content5,
 #tab6:checked ~ #content6,
-#tab7:checked ~ #content7 {
+#tab7:checked ~ #content7,
+#tab8:checked ~ #content8,
+#tab9:checked ~ #content9,
+#tab10:checked ~ #content10 {
   display: block;
 }
 

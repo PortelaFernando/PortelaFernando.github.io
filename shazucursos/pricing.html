@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from teachable.com/pricing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2017 21:13:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"438e27ebc2","applicationID":"68773785","transactionName":"IVlZFhNYCVQDRx5DAAVTRE0SXwpP","queueTime":24,"applicationTime":60,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <title>Teachable | Compare Our Pricing or Start With the Free Plan</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-92347034e89ac47d292a0f372ef5d1542ab9ab80b0ea5b0f822120eb0c7f1dbd.ico" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" media="all" href="assets/application-5746b84050e5ad44e27326916a08d5af06b8b8024af04edc458f540b9e7aa887.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="JXItInmh6cNDE/pGosf9cONC1VVaLNj29lS8XpCtMLz1dmJEpM4qrVSyqrUFdXp6gpd/DClPYnY28wU3YoHO/Q==" />
+      
+      <meta name="description" content="Per-user pricing sucks. That’s why all our pricing plans support unlimited courses and students - even on the free plan!" />
+    <link rel="canonical" href="pricing.html" />
+      <meta name="og:description" content="Per-user pricing sucks. That’s why all our pricing plans support unlimited courses and students - even on the free plan!" />
+      <meta property="og:title" content="Teachable | Compare Our Pricing or Start With the Free Plan" />
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:description" content="Per-user pricing sucks. That’s why all our pricing plans support unlimited courses and students - even on the free plan!" />
+      <meta property="twitter:title" content="Teachable | Compare Our Pricing or Start With the Free Plan" />
+    
+    <script src="assets/application-f386174a3d2263d9eea7f61a48a0fbeb56c15c7509345301c4892990e1b85da0.js"></script>
+    
+      <!-- LINKEDIN (for ads) -->
+      <script type="text/javascript">
+        _linkedin_data_partner_id = "30017";
+      </script>
+      <script type="text/javascript">
+        (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "../snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+      </script>
+      <!-- OPTIMIZELY (for A/B testing) -->
+      <script src="../cdn.optimizely.com/js/2602691345.js"></script>
+      <!-- RETENTION by PROFITWELL (for dunning) -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['ProfitWellObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+        })(window,document,'script','../dna8twue3dlxq.cloudfront.net/js/profitwell.js','profitwell');
+        profitwell('auth_token', 'c73a37dec4e02a585a09bd1997ebfa57');
+      </script>
+      <!-- PINTEREST (for ads) -->
+      <script type="text/javascript">
+        !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("../s.pinimg.com/ct/core.js");
+        pintrk('load','2615747628605');
+      </script>
+      <noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2615747628605&amp;noscript=1" />
+      </noscript>
+      <!-- RIGHTMESSAGE (for personalization) -->
+      <script type="text/javascript">
+        (function(p, a, n, d, o) {
+            a = document.createElement('script');
+            a.type = 'text/javascript'; a.async = true; a.src = p;
+            n = document.getElementsByTagName('script')[0]; n.parentNode.insertBefore(a, n);
+        })('../tag.rightmessage.io/1023339.html');
+      </script>
+      <!-- SEGMENT -->
+      <script>
+        window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+        window.analytics.load("tnh8fhmjpo");
+        analytics.ready(function() {
+          ga('create', 'UA-47288176-1', 'auto', {'name': 'secondTracker'});
+          ga('secondTracker.send', 'pageview');
+        });
+      </script>
+      <!-- PEBBLE POST -->
+      <script type="text/javascript">
+        window._pp = window._pp || {};
+        _pp.siteId = 1468;
+        (function() {
+          var ppjs = document.createElement('script');
+          ppjs.type = 'text/javascript';
+          ppjs.async = true;
+          ppjs.src = ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            '//cdn.pbbl.co/r/' + _pp.siteId + '.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ppjs, s);
+        })();
+      </script>
+  </head>
+    <body class="body-public ">
+      <div class="modal-background"></div>
+
+      <div class="webinar-modal-container modal-container vertically-align-contents">
+  <div class="webinar-modal">
+    <img class="close-modal-button x-button" src="assets/modals/modal-close-3e859097c030cd06db8a3856942e423ece061131abd9917d5cc825326c651c81.png" />
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-4">
+        <img src="assets/modals/cam-and-jess-375b2bfa7b9ab61413a25003a1c09862d1702874bc17a01f9f35edd8e4283397.png" />
+      </div>
+      <div class="col-xs-12 col-md-7 col-md-offset-1 vertically-align-contents">
+        <div class="inner-text">
+          <div class="small-uppercase-text"></div>
+          <div class="text-container">
+            <div class="default-modal-header">
+              Learn how to easily create your Teachable school in our live workshop
+            </div>
+            <p class="default-paragraph">In this free live workshop, learn how to setup your first course on Teachable and start teaching this week</p>
+          </div>
+          <div class="input-container">
+            <div class="spinner"></div>
+            <input type="text" placeholder="Email address" />
+            <a class="orange-button register-button">Register</a>
+            <div class="thank-you">
+              <div class="default-modal-header">
+                Thank you!
+              </div>
+              <p class="default-paragraph">You have registered for the webinar.</p>
+              <a class="orange-button close-modal-button">OK</a>
+            </div>
+            <div class="duplicate">
+              You have already registered for this webinar.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="exit-intent-modal-container modal-container vertically-align-contents">
+  <div class="exit-intent-modal">
+    <button type="button" class="close close-modal-button">
+      &times;
+    </button>
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-4">
+        <img src="assets/modals/ebook-cover-mockup-894ef52e921f90e1357f4acef975a1f7e472dd9750295803df50dbc2e8654a46.png" />
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <h1>Get Our Course Creation Book</h1>
+        <p>Learn how to create content for videos, slides, interviews & more to build your own online course!</p>
+        <input type="text" placeholder="Email Address" />
+        <button class="download-button" type="button" name="button">Download now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <section class="_18 clearfix transparent nav-menu">
+  <style>
+    
+    ._18 {
+      margin-bottom: 0px; 
+    }
+  @media (max-width: 991px) {
+    ._18 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._18 {
+      margin-bottom: 0px; 
+    }
+  }
+  </style>
+  <div class="container">
+    <div class="row">
+      <a class="create-course" href="create-account.html">Create a course</a>
+      <a class="teachable-logo" href="index.html" title="Teachable - Create a Course"></a>
+      <a class="log-in" href="login.html">Log in</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-collapse collapse">
+        <ul>
+          <li class="dropdown-only"><a href='create-account.html'>Create Account</a></li>
+          <li class="dropdown-only"><a href='login.html'>Log In</a></li>
+          <li><a href='features.html'>Features</a></li>
+          <li><a href='pricing.html'>Pricing</a></li>
+          <li><a href='examples.html'>Examples</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href='http://blog.teachable.com/'>Blog</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href='summit9294.html?utm_source=nav'>Summit</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="big-image _19">
+  <style>
+    ._19 {
+      margin-bottom: 0px; 
+    }
+  @media (max-width: 991px) {
+    ._19 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._19 {
+      margin-bottom: 0px; 
+    }
+  }
+  </style>
+  <img src=https://process.filestackapi.com//compress/quality=value:90/8ZQHFkuuQaicWWD8ZR3t style=height:750px; />
+  <div class="big-image-div" style="background-image: url(https://process.filestackapi.com//compress/quality=value:90/8ZQHFkuuQaicWWD8ZR3t); min-height: 750px;"></div>
+</section>
+
+  <section id="pricing-table" class="pricing-table _20 neg-margin">
+  <style>
+    ._20 {
+      margin-bottom: 130px; 
+    }
+  @media (max-width: 991px) {
+    ._20 {
+      margin-bottom: 100px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._20 {
+      margin-bottom: 100px; 
+    }
+  }
+    ._20 {
+        margin-top: -570px;
+    }
+  </style>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 hero-text">
+        <h1 class="neg-header">Unlimited courses and students on all plans</h1>
+        <h2>Per-user pricing sucks. That’s why all our pricing plans support as many courses and students as you want.</h2>
+          <div class="toggle">
+          	<span class="monthly active">Monthly plans</span>
+          	<label>
+              <input id="pricing-table-switch" type="checkbox" />
+              <div></div>
+          	</label>
+          	<span class="annual">Annual plans</span>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="pricing-cards monthly-pricing-cards clearfix">
+          <li class="col-xs-12 col-md-4 pricing-card basic">
+            <div class="pricing-card-inner pricing-match-height">
+              <h3>Basic</h3>
+              <h4>Create your first online course</h4>
+              <span class="monthly">
+                <p class="pricing-number">$39</p>
+                <h4>per month</h4>
+                <a class="green-button choose-button" href="create-account491e.html?plan_id=10">Choose this plan</a>
+              </span>
+              <hr />
+              <div class="features-included-section">
+                <p class="includes-text">Basic includes</p>
+                <p class="everything-plus-text">All of our base features, plus:</p>
+                <ul class="list-pricing">
+                    <li class="clearfix">
+                      <div class="plan-feature">5% transaction fees</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Monthly payouts</div>
+                        <img data-toggle="tooltip" title="PayPal deposits once a month with a 30-day delay" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">2 owners/authors</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Product support</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Custom domain support</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Coupon codes</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Drip course content</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Integrated affiliate marketing</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Integrated email marketing</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Third-party integrations</div>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-xs-12 col-md-4 pricing-card professional">
+            <div class="pricing-card-inner pricing-match-height">
+              <h3>Professional</h3>
+              <h4>Our most popular plan</h4>
+              <span class="monthly">
+                <p class="pricing-number">$99</p>
+                <h4>per month</h4>
+                <a class="green-button choose-button" href="create-account0bfb.html?plan_id=3">Choose this plan</a>
+              </span>
+              <hr />
+              <div class="features-included-section">
+                <p class="includes-text">Professional includes</p>
+                <p class="everything-plus-text">Everything in Basic, plus:</p>
+                <ul class="list-pricing">
+                    <li class="clearfix">
+                      <div class="plan-feature">No transaction fees</div>
+                        <img data-toggle="tooltip" title="0% rate only applies if you set up custom payment gateways via Stripe and PayPal. If you do not set up payment gateways, Teachable charges 2%" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Instant payouts</div>
+                        <img data-toggle="tooltip" title="If you set up direct payment gateways via Stripe and PayPal. If you do not set up payment gateways, Teachable will pay you monthly" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">5 owners/authors</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Priority product support</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Graded quizzes</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Advanced theme customization</div>
+                        <img data-toggle="tooltip" title="Use our Power Editor to create custom designs" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Advanced reports</div>
+                        <img data-toggle="tooltip" title="On courses, students, videos, and upsells" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Unbranded website</div>
+                        <img data-toggle="tooltip" title="Remove Teachable branding from your website" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-xs-12 col-md-4 pricing-card high-volume">
+            <div class="pricing-card-inner pricing-match-height">
+              <h3>High Volume</h3>
+              <h4>Experience the best of Teachable</h4>
+              <span class="monthly">
+                <p class="pricing-number">$299</p>
+                <h4>per month</h4>
+                <a class="green-button choose-button" href="create-account5d55.html?plan_id=5">Choose this plan</a>
+              </span>
+              <hr />
+              <div class="features-included-section">
+                <p class="includes-text">High Volume includes</p>
+                <p class="everything-plus-text">Everything in Professional, plus:</p>
+                <ul class="list-pricing">
+                    <li class="clearfix">
+                      <div class="plan-feature">No transaction fees</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Instant payouts</div>
+                        <img data-toggle="tooltip" title="If you set up direct payment gateways via Stripe and PayPal. If you do not set up payment gateways, Teachable will pay you monthly" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">25 owners/authors</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Priority product support</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Concierge onboarding</div>
+                        <img data-toggle="tooltip" title="Two 1-hour sessions" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Manual student imports</div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="plan-feature">Bulk student enrollments</div>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+      </ul>
+      <ul class="pricing-cards annual-pricing-cards clearfix">
+        <div class="col-md-1"></div>
+          <li class="col-xs-12 col-md-5 pricing-card basic">
+            <div class="pricing-card-inner pricing-match-height">
+              <h3>Basic</h3>
+              <h4>Create your first online course</h4>
+              <span class="annual">
+                <p class="pricing-number">$33.25</p>
+                <h4>per month (<em>billed annually</em>)</h4>
+                <a class="green-button choose-button" href="create-accounte6c5.html?plan_id=11">Choose this plan</a>
+              </span>
+              <hr />
+              <div class="features-included-section">
+                <p class="includes-text">Basic includes</p>
+                <p class="everything-plus-text">All of our base features, plus:</p>
+                <ul class="list-pricing">
+                    <li>
+                      5% transaction fees
+                    </li>
+                    <li>
+                      Monthly payouts
+                        <img data-toggle="tooltip" title="PayPal deposits once a month with a 30-day delay" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li>
+                      2 owners/authors
+                    </li>
+                    <li>
+                      Product support
+                    </li>
+                    <li>
+                      Custom domain support
+                    </li>
+                    <li>
+                      Coupon codes
+                    </li>
+                    <li>
+                      Drip course content
+                    </li>
+                    <li>
+                      Integrated affiliate marketing
+                    </li>
+                    <li>
+                      Integrated email marketing
+                    </li>
+                    <li>
+                      Third-party integrations
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-xs-12 col-md-5 pricing-card professional">
+            <div class="pricing-card-inner pricing-match-height">
+              <h3>Professional</h3>
+              <h4>Our most popular plan</h4>
+              <span class="annual">
+                <p class="pricing-number">$83.25</p>
+                <h4>per month (<em>billed annually</em>)</h4>
+                <a class="green-button choose-button" href="create-account5ac8.html?plan_id=7">Choose this plan</a>
+              </span>
+              <hr />
+              <div class="features-included-section">
+                <p class="includes-text">Professional includes</p>
+                <p class="everything-plus-text">Everything in Basic, plus:</p>
+                <ul class="list-pricing">
+                    <li>
+                      No transaction fees
+                        <img data-toggle="tooltip" title="0% rate only applies if you set up custom payment gateways via Stripe and PayPal. If you do not set up payment gateways, Teachable charges 2%" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li>
+                      Instant payouts
+                        <img data-toggle="tooltip" title="If you set up direct payment gateways via Stripe and PayPal. If you do not set up payment gateways, Teachable will pay you monthly" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li>
+                      5 owners/authors
+                    </li>
+                    <li>
+                      Priority product support
+                    </li>
+                    <li>
+                      Graded quizzes
+                    </li>
+                    <li>
+                      Advanced theme customization
+                        <img data-toggle="tooltip" title="Use our Power Editor to create custom designs" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li>
+                      Advanced reports
+                        <img data-toggle="tooltip" title="On courses, students, videos, and upsells" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                    <li>
+                      Unbranded website
+                        <img data-toggle="tooltip" title="Remove Teachable branding from your website" src="assets/tooltip-044cf9b8306c9cfaedd10c052f68998284deab5d7026612b2441c5376afafff2.svg">
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+      </ul>
+    </div>
+    <div class="row included-in-all-plans-header">
+      Included in all plans
+    </div>
+    <div class="all-plans-features-centerer">
+      <div class="row included-in-all-plans">
+          <div class="col-md-4">
+            <ul>
+                <li>
+                  Unlimited video
+                </li>
+                <li>
+                  Unlimited courses
+                </li>
+                <li>
+                  Unlimited students
+                </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+                <li>
+                  Unlimited hosting
+                </li>
+                <li>
+                  Integrated payment processing
+                </li>
+                <li>
+                  Student management
+                </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+                <li>
+                  Discussion forums
+                </li>
+                <li>
+                  Basic quizzes
+                </li>
+                <li>
+                  No fees on free courses
+                </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <a class="compare-plans" href="pricing/comparison.html">
+          Compare plans
+        </a>
+      </div>
+    </div>
+      <div class="row test-run">
+        <div>Take Teachable for a test run. <a href="create-account.html">Try our free plan.</a></div>
+      </div>
+  </div>
+</section>
+
+  <section class="three-testimonials _21">
+  <style>
+    ._21 {
+      margin-bottom: 60px; 
+    }
+  @media (max-width: 991px) {
+    ._21 {
+      margin-bottom: 60px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._21 {
+      margin-bottom: 60px; 
+    }
+  }
+  </style>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <blockquote class="active" data-id="1">
+          “I made $169,000 from the launch of my first two online courses. Teachable made it incredibly easy to create high-quality products from scratch.”
+        </blockquote>
+        <blockquote data-id="2">
+          “We&#39;ve generated $560,000 from our first two launches on Teachable.”
+        </blockquote>
+        <blockquote data-id="3">
+          “I know how tough it can be to decide what platform your business is going to be run on. We couldn’t be happier with our decision to use Teachable.”
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-4 col-md-offset-4 profile-images">
+        <img src=https://process.filestackapi.com//compress/quality=value:90/UQ2vDQcTQq88XYQlisDg class="active" data-id="0" />
+        <img src=https://process.filestackapi.com//compress/quality=value:90/cMBKDiiNTpKZ6w3IVilX data-id="1" />
+        <img src=https://process.filestackapi.com//compress/quality=value:90/nbeXPoKQyMj5EKJhEpwg data-id="2" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 profile-captions">
+        <cite class="active" data-id="1">Pat Flynn, Smart Passive Income</cite>
+        <cite data-id="2">James Blatch, Self Publishing Formula, </cite>
+        <cite data-id="3">Mariah Coz, Femtrepreneur, </cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="three-points-and-image _22">
+  <style>
+    ._22 {
+      margin-bottom: 85px; 
+    }
+  @media (max-width: 991px) {
+    ._22 {
+      margin-bottom: 85px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._22 {
+      margin-bottom: 85px; 
+    }
+  }
+  </style>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-7 col-xs-12 left-column match-height-three-points-and-image-column">
+        <div class="points-box">
+          <h1 class="">Looking for an enterprise solution? Get a powerful, easy-to-use course platform</h1>
+          <p class="">Hit your goals with a single comprehensive solution that anyone within your organization can use.</p>
+          <h1 class="">Premium support directly from Teachable experts</h1>
+          <p class="">Enterprises get direct access to a dedicated account manager to help with strategic consulting, support, onboarding and training.</p>
+          <h1 class="">Say goodbye to threading together multiple providers</h1>
+          <p class="">Web hosting, payments, video delivery, and analytics – we’re happy to be the only solution you’ll need.</p>
+        </div>
+      </div>
+      <div class="col-sm-5 col-xs-12 right-column match-height-three-points-and-image-column">
+        <div>
+          <img src=https://process.filestackapi.com//compress/quality=value:90/RQGA5FC4QXSKgs42F798 />
+        </div>
+        <div class="text-below-image" style="background-color:#FF7F45;">
+          <h1>Interested in Teachable’s Enterprise plans?</h1>
+          <p>Talk directly with a member of our team and find out how you can join companies like The New York Times, Mozilla, ICANN, and the University of Pennsylvania using the easiest learning management system in the world.</p>
+          <a href="enterprise.html">Find out more&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="faq-7 _23">
+  <style>
+    ._23 {
+      margin-bottom: 60px; 
+    }
+  @media (max-width: 991px) {
+    ._23 {
+      margin-bottom: 60px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._23 {
+      margin-bottom: 60px; 
+    }
+  }
+  </style>
+  <div class="container">
+		<div class="row">
+      <div class="col-xs-12">
+        <h1 class="small-uppercase-text">FAQ</h1>
+        <h2 class="default-header">Answers to all your questions</h2>
+      </div>
+    </div>
+    <div class="row gutter-25 question-section">
+      <div class="col-xs-12 col-md-6 gutter-25">
+            <h3>Which plan do you recommend?</h3>
+            <div class="answer markdown"><p>The most popular plan is our Professional plan. However, we also offer a free plan so you can try out Teachable and see if it’s a good fit for you.</p>
+</div>
+            <h3>What happens if I want to cancel my plan?</h3>
+            <div class="answer markdown"><p>We&#39;ll be sad to see you go, but you can cancel your Teachable plan at any time. We don&#39;t lock you into any lengthy contract. Moreover, since you own all school data as well as the domain name (if using a custom one), you can download your course, student, and revenue information so you can build your own website or use another service.</p>
+</div>
+            <h3>Can I use my own domain name?</h3>
+            <div class="answer markdown"><p>On our Basic plan and above, you can use your own domain name (example.com). Additionally, every Teachable plan comes with a completely free yourschool.teachable.com domain name that you’re welcome to use.</p>
+</div>
+            <h3>Do you charge a setup fee?</h3>
+            <div class="answer markdown"><p>With Teachable, there are absolutely no setup fees. You can launch your school for free!</p>
+</div>
+            <h3>How do transaction fees work?</h3>
+            <div class="answer markdown"><p>Every time a user purchases a course, course bundle, or subscription, we collect a transaction fee according to your pricing plan. Higher-priced monthly plans have lower transaction fees. If you are on our Free, Basic, Professional or High Volume plans and are using the Teachable payment gateway, we also charge a standard payment processing fee of 2.9% + $0.30 on paid courses.</p>
+</div>
+            <h3>When do I get paid?</h3>
+            <div class="answer markdown"><p>When using Teachable’s payment gateway, you’ll be paid at the beginning of each month for purchases made at least 30 days ago. For example, if one student pays you on March 5, and another pays you on March 25, you’ll receive both students’ payments at the beginning of May. This system allows us enough time to honor our 30-day refund policy. However, if you’re using a custom payment gateway (available on the Professional plan and above), payouts will be distributed almost immediately.</p>
+</div>
+            <h3>Can Teachable be used for enterprise applications like internal training?</h3>
+            <div class="answer markdown"><p>Absolutely! Some of our biggest clients use Teachable for internal training. Our High Volume and Enterprise plans allow you to import your employees for private training.</p>
+</div>
+      </div>
+      <div class="col-xs-12 col-md-6 gutter-25">
+            <h3>Can I offer free courses with Teachable?</h3>
+            <div class="answer markdown"><p>Absolutely! And when you create a free course, we do not charge any fees on enrollments.</p>
+</div>
+            <h3>Do I need a web host?</h3>
+            <div class="answer markdown"><p>Nope. Teachable hosts all your course content (even though, to your audience, it looks like you’re hosting it!)</p>
+</div>
+            <h3>Is there a limit to how much content I can upload?</h3>
+            <div class="answer markdown"><p>Every Teachable plan includes unlimited video and course content bandwidth. Upload as many courses, videos, PDFs, etc. as you like.</p>
+</div>
+            <h3>Do I need a payment processor?</h3>
+            <div class="answer markdown"><p>Teachable handles the payment processing for you, so you don’t need a separate processor. We accept credit card, debit card, and PayPal. (However, on the Professional plan and above, you can also use your own payment gateways and take advantage of instant payouts!)</p>
+</div>
+            <h3>What happens if I cannot set up direct payouts via Stripe Connect or PayPal?</h3>
+            <div class="answer markdown"><p>If you cannot set up custom payment gateways on the Professional plan or above, Teachable can collect funds for you and pay you on our regular payment schedule. When using our payment gateway, we have a payment processing fee of 2.9% + 30¢, plus a fee that varies based on your plan:</p>
+
+<ul>
+<li>  Free: $1 + 10%</li>
+<li>  Basic: 5%</li>
+<li>  Professional: 2%</li>
+<li>  High Volume: 0%</li>
+</ul>
+</div>
+            <h3>Who pays my affiliates and authors out?</h3>
+            <div class="answer markdown"><p>If you have custom gateways enabled (Stripe and/or PayPal), you are responsible for paying authors and affiliates out. If you use Teachable’s payment gateway, we will automatically pay out your authors and affiliates, send them the necessary tax forms at the end of the year, and take care of all the reporting.</p>
+</div>
+            <h3>Who can I contact with additional questions?</h3>
+            <div class="answer markdown"><p>After creating an account, you can easily submit a support ticket from the admin area. Alternatively, you are always welcome to contact us through our <a href="https://sso.teachable.com/secure/teachable_accounts/help">help form</a> if you have any questions prior to creating your first course.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="cta _24">
+  <style>
+    ._24 {
+      margin-bottom: 50px; 
+    }
+  @media (max-width: 991px) {
+    ._24 {
+      margin-bottom: 40px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._24 {
+      margin-bottom: 40px; 
+    }
+  }
+  </style>
+  <div class="container">
+		<div class="row">
+      <div class="col-xs-12">
+        <h1 class="small-uppercase-text">WHAT ARE YOU WAITING FOR?</h1>
+        <h2 class="default-header" style="max-width: 525px">Start now and turn your knowledge into a profitable online course</h2>
+        <a href="create-account.html" class="orange-button">Get started for free</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="big-image _25">
+  <style>
+    ._25 {
+      margin-bottom: 0px; 
+    }
+  @media (max-width: 991px) {
+    ._25 {
+      margin-bottom: 0px; 
+    }
+  }
+  @media (max-width: 767px) {
+    ._25 {
+      margin-bottom: 0px; 
+    }
+  }
+  </style>
+  <img src=../s3.amazonaws.com/cms-uploaded-images/4jyw6cKBRvGNPcCfcl9G_people.jpg  />
+  <div class="big-image-div" style="background-image: url(../s3.amazonaws.com/cms-uploaded-images/4jyw6cKBRvGNPcCfcl9G_people.jpg); min-height: 375px;"></div>
+</section>
+
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2 first-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Product</h4>
+          <li>
+            <a href="examples.html">Examples</a>
+          </li>
+          <li>
+            <a href="features.html">Features</a>
+          </li>
+          <li>
+            <a href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 second-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Learn</h4>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://teachable.zendesk.com/hc/en-us">Knowledge Base</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="http://blog.teachable.com/">Blog</a>
+          </li>
+          <li>
+            <a href="enterprise.html">Enterprise</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 third-section">
+        <ul class="new-homepage-footer-links">
+          <h4>Company</h4>
+          <li>
+            <a href="careers.html">Careers</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="http://changelog.teachable.com/">Product updates</a>
+          </li>
+          <li>
+            <a href="affiliates.html">Become an affiliate</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="new-homepage-footer-links">
+          <h4>Legal</h4>
+          <li>
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="terms-of-use.html">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="new-homepage-footer-links">
+          <h4>Get in touch</h4>
+          <li>We're here if you need us:</li>
+          <li>
+            <a href="cdn-cgi/l/email-protection.html#44373134342b363004302125272c252628216a272b29">Contact us</a>
+          </li>
+          <li class="social-icons">
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.facebook.com/teachableHQ/">
+              <img src="assets/footer/facebook_icon-4123fb4aef6386d557ed654543029d5964d42775cc972ce186789292243d19e7.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://twitter.com/teachable">
+              <img src="assets/footer/twitter_icon-dfcd749e19035479055f2de4729aa45470ce648b11f56aad4534a89d83947930.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.pinterest.com/teachablehq/">
+              <img src="assets/footer/pinterest_icon-f81e2671629b0d1716cbdce81fd1500d598c50e9d65ee3c50950dcc89bfbe827.png" width="32px">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" class="social-icon" href="https://www.instagram.com/teachable/">
+              <img src="assets/footer/instagram_icon-1e222076e9d388360f27a800afdd9571892dd5143ff480daea7bd879c84f8005.svg" width="32px">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 new-homepage-footer-logo">
+        <a href="index.html">
+          <img alt='' src="assets/teachable-logo-orange-3ece80f83dd5fdb472495dd41735abbb3e685c351b2e54a84aaee8c56e9f1283.svg" class="new-homepage-footer-logo">
+        </a>
+        <span>All rights reserved Teachable&trade; 2017</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="cdn-cgi/scripts/78d64697/cloudflare-static/email-decode.min.js"></script></body>
+
+<!-- Mirrored from teachable.com/pricing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2017 21:13:56 GMT -->
+</html>

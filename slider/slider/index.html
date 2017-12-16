@@ -1,14 +1,63 @@
 
 <!doctype html>
-<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+<html>
   
 <link rel='stylesheet' id='sage/main-css-css'  href='../19191-presscdn-pagely.netdna-ssl.com/wp-content/themes/channeladvisor/assets/css/main055c.css?ver=1513135503' type='text/css' media='all' />
 <link rel='stylesheet' id='sage/general-css-css'  href='../19191-presscdn-pagely.netdna-ssl.com/wp-content/themes/channeladvisor/assets/css/general-functions.css' type='text/css' media='all' />
 <link rel='stylesheet' id='sage/resp-css-css'  href='../19191-presscdn-pagely.netdna-ssl.com/wp-content/themes/channeladvisor/assets/css/responsive.css' type='text/css' media='all' />
 <script type='text/javascript' src='../19191-presscdn-pagely.netdna-ssl.com/wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
-<script type='text/javascript' src='../19191-presscdn-pagely.netdna-ssl.com/wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript' src='../19191-presscdn-pagely.netdna-ssl.com/wp-content/themes/channeladvisor/assets/js/home-js.js'></script>
+<script type='text/javascript' src='../19191-presscdn-pagely.netdna-ssl.com/wp-content/themes/channeladvisor/assets/js/owl.carousel.min.js'></script>
 
 
+
+<script type="text/javascript">
+  (function($){
+    $(document).ready(function () {
+      //add for number count
+      jQuery('.bottom-line-block h5 strong').counterUp({
+          delay: 20,
+          time: 1000
+      });
+  
+      //add for home slider
+      var owl = $(".home-slider");
+      owl.owlCarousel({
+          singleItem: true,
+          pagination: true,
+          autoPlay: true,
+          stopOnHover : true,
+          afterAction: function (el) {
+              //remove class active
+              this
+                  .$owlItems
+                  .removeClass('active')
+  
+              //add class active
+              this
+                  .$owlItems //owl internal $ object containing items
+                  .eq(this.currentItem)
+                  .addClass('active')
+          }
+      });
+  
+      //add for logo slider
+      var owl2 = $(".logo-home-outer ul");
+      owl2.owlCarousel({
+          pagination: false,
+          autoPlay: true,
+          navigation: true,
+          stopOnHover : true,
+          itemsDesktop: [1180, 6],
+          itemsDesktopSmall: [1024, 5],
+          itemsTablet: [991, 4],
+          itemsTabletSmall: [639, 2],
+          itemsMobile: [479, 1]
+      });
+      $(".home-content").css({'opacity':'1'});
+    });
+  })(jQuery);
+  </script>
 
         <div id="content" class="site-content">
           <section class="banner">
@@ -169,73 +218,12 @@
       </div>
     </section>
 
-
-<script type="text/javascript">
-(function($){
-  $(document).ready(function () {
-    //add for number count
-    jQuery('.bottom-line-block h5 strong').counterUp({
-        delay: 20,
-        time: 1000
-    });
-
-    //add for home slider
-    var owl = $(".home-slider");
-    owl.owlCarousel({
-        singleItem: true,
-        pagination: true,
-        autoPlay: true,
-        stopOnHover : true,
-        afterAction: function (el) {
-            //remove class active
-            this
-                .$owlItems
-                .removeClass('active')
-
-            //add class active
-            this
-                .$owlItems //owl internal $ object containing items
-                .eq(this.currentItem)
-                .addClass('active')
-        }
-    });
-
-    //add for logo slider
-    var owl2 = $(".logo-home-outer ul");
-    owl2.owlCarousel({
-        pagination: false,
-        autoPlay: true,
-        navigation: true,
-        stopOnHover : true,
-        itemsDesktop: [1180, 6],
-        itemsDesktopSmall: [1024, 5],
-        itemsTablet: [991, 4],
-        itemsTabletSmall: [639, 2],
-        itemsMobile: [479, 1]
-    });
-    $(".home-content").css({'opacity':'1'});
-  });
-})(jQuery);
-</script>
         </div><!-- .site-content -->
       </div><!-- .site-inner -->
 
     </div><!-- .site -->
 
 
-<script type='text/javascript'>
-</script>
-<script type='text/javascript' src='../19191-presscdn-pagely.netdna-ssl.com/wp-content/themes/channeladvisor/assets/js/general.js'></script>
-<script type='text/javascript' src='../19191-presscdn-pagely.netdna-ssl.com/wp-content/themes/channeladvisor/assets/js/jquery-ui.js'></script>
-<script type='text/javascript' src='../19191-presscdn-pagely.netdna-ssl.com/wp-content/themes/channeladvisor/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
-<script type='text/javascript' src='../19191-presscdn-pagely.netdna-ssl.com/wp-content/themes/channeladvisor/assets/js/home-js.js'></script>
-<script type='text/javascript' src='../19191-presscdn-pagely.netdna-ssl.com/wp-content/themes/channeladvisor/assets/js/owl.carousel.min.js'></script>
-<script type='text/javascript' src='../19191-presscdn-pagely.netdna-ssl.com/wp-includes/js/wp-embed.min5859.js?ver=4.9.1'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var countVars = {"disqusShortname":"channeladvisorcomblog"};
-/* ]]> */
-</script>
   </body>
 
 </html>
